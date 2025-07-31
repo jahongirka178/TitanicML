@@ -17,8 +17,8 @@ url = "https://raw.githubusercontent.com/jahongirka178/TitanicML/refs/heads/mast
 df = pd.read_csv(url)
 
 # Таблица
-st.subheader('Почищенные данные')
-st.table(df.sample(10), use_container_width=True)
+st.subheader('Данные')
+st.dataframe(df.sample(10), use_container_width=True)
 
 
 # Визуализация
