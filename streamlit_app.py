@@ -18,7 +18,7 @@ df = pd.read_csv(url)
 
 # Таблица
 st.subheader('Почищенные данные')
-st.table(df)
+st.table(df.sample(10))
 
 
 # Визуализация
