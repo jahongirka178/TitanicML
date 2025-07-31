@@ -13,12 +13,9 @@ st.title("🚢 Датасет Titanic - Предсказание выживан�
 st.write('## Классическое ML-приложение на Titanic')
 
 # Загрузка данных
-url = "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv"
+url = "https://raw.githubusercontent.com/jahongirka178/TitanicML/refs/heads/master/data/titanic_for_hw.csv"
 df = pd.read_csv(url)
 
-# Предобработка
-df = df[['Survived', 'Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']]
-df.dropna(inplace=True)
 
 # Визуализация
 st.subheader('📊 Визуализация данных')
