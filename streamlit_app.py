@@ -18,7 +18,7 @@ df = pd.read_csv(url)
 
 # Таблица
 st.subheader('Данные')
-st.dataframe(df.sample(10), use_container_width=True)
+st.dataframe(df.select_dtypes(include='number').round(2).combine_first(df), use_container_width=True)
 
 
 # Визуализация
