@@ -1,0 +1,62 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS metadata
+Icon?
+._*
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints
+
+# MyPy, Pyright, Pylint, etc.
+.mypy_cache/
+.pyright/
+.pyre/
+.pytest_cache/
+
+# C extensions
+*.so
+
+# Logs and local data
+*.log
+*.sqlite3
+*.db
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# Coverage / testing
+htmlcov/
+.tox/
+.coverage
+coverage.xml
+*.cover
+nosetests.xml
+test-results/
+
+# pip-tools
+*.txt~  # temp lock file backups
+
+# dotenv
+*.env
+.env.*
