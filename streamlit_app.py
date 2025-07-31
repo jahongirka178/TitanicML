@@ -20,10 +20,8 @@ df = pd.read_csv(url)
 st.subheader('Данные')
 st.dataframe(df.select_dtypes(include='number').round(2).combine_first(df), use_container_width=True)
 
-
 # Визуализация
 st.subheader('📊 Визуализация данных')
-
 col1, col2 = st.columns(2)
 
 with col1:
