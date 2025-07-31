@@ -24,6 +24,7 @@ df.dropna(inplace=True)
 st.subheader('📊 Визуализация данных')
 
 col1, col2 = st.columns(2)
+
 with col1:
     fig1 = px.histogram(df, x='Survived', color='Sex', barmode='group',
                         title='Выживание по полу', labels={'Survived': 'Выжил'})
@@ -93,9 +94,16 @@ st.dataframe(user_input)
 
 # Предсказания моделей
 st.sidebar.subheader("📌 Результаты предсказания")
-for name, model in models.items():
-    pred = model.predict(user_encoded)[0]
-    proba = model.predict_proba(user_encoded)[0]
-    st.sidebar.markdown(f"**{name}: {'Выжил' if pred == 1 else 'Не выжил'}**")
-    proba_df = pd.DataFrame({'Класс': ['Не выжил', 'Выжил'], 'Вероятность': proba})
-    st.sidebar.dataframe(proba_df.set_index("Класс"), use_container_width=True)
+
+if st.sidebar.button("Сделать предсказание"):
+    user_encoded = encoder.transform(user_input)
+
+    for name, model in models.items():
+        pred = model.predict(user_encoded)[0]
+        proba = model.predict_proba(user_encoded)[0]
+
+        st.sidebar.markdown(f"**{name}: {'✅ Выжил' if pred == 1 else '❌ Не выжил'}**")
+        proba_df = pd.DataFrame({'Класс': ['Не выжил', 'Выжил'], 'Вероятность': proba})
+        st.sidebar.dataframe(proba_df.set_index("Класс"), use_container_width=True)
+else:
+    st.sidebar.markdown("⬅️ Введите параметры и нажмите кнопку.")
