@@ -1,0 +1,892 @@
+Pclass,Name,Sex,Age,Fare,Cabin,Embarked,Title,FareCategory,family_size,is_alone,AgeGroup,Survived
+3,"Braund, Owen Harris",male,22.0,7.25,U,S,Mr,Low,2,0,YoungAdult,0
+1,"Cumings, John Bradley (Florence Briggs Thayer)",female,38.0,71.2833,C,C,Mrs,VeryHigh,2,0,Adult,1
+3,"Heikkinen, Laina",female,26.0,7.925,U,S,Miss,Low,1,1,YoungAdult,1
+1,"Futrelle, Jacques Heath (Lily May Peel)",female,35.0,53.1,C,S,Mrs,High,2,0,YoungAdult,1
+3,"Allen, William Henry",male,35.0,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Moran, James",male,32.25215146299484,8.4583,U,Q,Mr,Medium,1,1,YoungAdult,0
+1,"McCarthy, Timothy J",male,54.0,51.8625,E,S,Mr,High,1,1,Adult,0
+3,"Palsson, Gosta Leonard",male,2.0,21.075,U,S,Master,High,5,0,Child,0
+3,"Johnson, Oscar W (Elisabeth Vilhelmina Berg)",female,27.0,11.1333,U,S,Mrs,Medium,3,0,YoungAdult,1
+2,"Nasser, Nicholas (Adele Achem)",female,14.0,30.0708,U,C,Mrs,High,2,0,Teen,1
+3,"Sandstrom, Marguerite Rut",female,4.0,16.7,G,S,Miss,High,3,0,Child,1
+1,"Bonnell, Elizabeth",female,58.0,26.55,C,S,Miss,High,1,1,Adult,1
+3,"Saundercock, William Henry",male,20.0,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Andersson, Anders Johan",male,39.0,31.275,U,S,Mr,High,7,0,Adult,0
+3,"Vestrom, Hulda Amanda Adolfina",female,14.0,7.8542,U,S,Miss,Low,1,1,Teen,0
+2,"Hewlett, (Mary D Kingcome) ",female,55.0,16.0,U,S,Mrs,High,1,1,Adult,1
+3,"Rice, Eugene",male,2.0,29.125,U,Q,Master,High,6,0,Child,0
+2,"Williams, Charles Eugene",male,32.25215146299484,13.0,U,S,Mr,Medium,1,1,YoungAdult,1
+3,"Vander Planke, Julius (Emelia Maria Vandemoortele)",female,31.0,18.0,U,S,Mrs,High,2,0,YoungAdult,0
+3,"Masselmani, Fatima",female,36.91812865497076,7.225,U,C,Mrs,Low,1,1,Adult,1
+2,"Fynney, Joseph J",male,35.0,26.0,U,S,Mr,High,1,1,YoungAdult,0
+2,"Beesley, Lawrence",male,34.0,13.0,D,S,Mr,Medium,1,1,YoungAdult,1
+3,"McGowan, Anna ""Annie""",female,15.0,8.0292,U,Q,Miss,Low,1,1,Teen,1
+1,"Sloper, William Thompson",male,28.0,35.5,A,S,Mr,High,1,1,YoungAdult,1
+3,"Palsson, Torborg Danira",female,8.0,21.075,U,S,Miss,High,5,0,Child,0
+3,"Asplund, Carl Oscar (Selma Augusta Emilia Johansson)",female,38.0,31.3875,U,S,Mrs,High,7,0,Adult,1
+3,"Emir, Farred Chehab",male,32.25215146299484,7.225,U,C,Mr,Low,1,1,YoungAdult,0
+1,"Fortune, Charles Alexander",male,19.0,263.0,C,S,Mr,VeryHigh,6,0,Teen,0
+3,"O'Dwyer, Ellen ""Nellie""",female,21.8243661971831,7.8792,U,Q,Miss,Low,1,1,YoungAdult,1
+3,"Todoroff, Lalio",male,32.25215146299484,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Uruchurtu, Manuel E",male,40.0,27.7208,U,C,Royal,High,1,1,Adult,0
+1,"Spencer, William Augustus (Marie Eugenie)",female,36.91812865497076,146.5208,B,C,Mrs,VeryHigh,2,0,Adult,1
+3,"Glynn, Mary Agatha",female,21.8243661971831,7.75,U,Q,Miss,Low,1,1,YoungAdult,1
+2,"Wheadon, Edward H",male,66.0,10.5,U,S,Mr,Medium,1,1,Senior,0
+1,"Meyer, Edgar Joseph",male,28.0,82.1708,U,C,Mr,VeryHigh,2,0,YoungAdult,0
+1,"Holverson, Alexander Oskar",male,42.0,52.0,U,S,Mr,High,2,0,Adult,0
+3,"Mamee, Hanna",male,32.25215146299484,7.2292,U,C,Mr,Low,1,1,YoungAdult,1
+3,"Cann, Ernest Charles",male,21.0,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Vander Planke, Augusta Maria",female,18.0,18.0,U,S,Miss,High,3,0,Teen,0
+3,"Nicola-Yarred, Jamila",female,14.0,11.2417,U,C,Miss,Medium,2,0,Teen,1
+3,"Ahlin, Johan (Johanna Persdotter Larsson)",female,40.0,9.475,U,S,Mrs,Medium,2,0,Adult,0
+2,"Turpin, William John Robert (Dorothy Ann Wonnacott)",female,27.0,21.0,U,S,Mrs,High,2,0,YoungAdult,0
+3,"Kraeff, Theodor",male,32.25215146299484,7.8958,U,C,Mr,Low,1,1,YoungAdult,0
+2,"Laroche, Simonne Marie Anne Andree",female,3.0,41.5792,U,C,Miss,High,4,0,Child,1
+3,"Devaney, Margaret Delia",female,19.0,7.8792,U,Q,Miss,Low,1,1,Teen,1
+3,"Rogers, William John",male,32.25215146299484,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Lennon, Denis",male,32.25215146299484,15.5,U,Q,Mr,High,2,0,YoungAdult,0
+3,"O'Driscoll, Bridget",female,21.8243661971831,7.75,U,Q,Miss,Low,1,1,YoungAdult,1
+3,"Samaan, Youssef",male,32.25215146299484,21.6792,U,C,Mr,High,3,0,YoungAdult,0
+3,"Arnold-Franchi, Josef (Josefine Franchi)",female,18.0,17.8,U,S,Mrs,High,2,0,Teen,0
+3,"Panula, Juha Niilo",male,7.0,39.6875,U,S,Master,High,6,0,Child,0
+3,"Nosworthy, Richard Cater",male,21.0,7.8,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Harper, Henry Sleeper (Myna Haxtun)",female,49.0,76.7292,D,C,Mrs,VeryHigh,2,0,Adult,1
+2,"Faunthorpe, Lizzie (Elizabeth Anne Wilkinson)",female,29.0,26.0,U,S,Mrs,High,2,0,YoungAdult,1
+1,"Ostby, Engelhart Cornelius",male,65.0,61.9792,B,C,Mr,VeryHigh,2,0,Senior,0
+1,"Woolner, Hugh",male,32.25215146299484,35.5,C,S,Mr,High,1,1,YoungAdult,1
+2,"Rugg, Emily",female,21.0,10.5,U,S,Miss,Medium,1,1,YoungAdult,1
+3,"Novel, Mansouer",male,28.5,7.2292,U,C,Mr,Low,1,1,YoungAdult,0
+2,"West, Constance Mirium",female,5.0,27.75,U,S,Miss,High,4,0,Child,1
+3,"Goodwin, William Frederick",male,11.0,46.9,U,S,Master,High,8,0,Child,0
+3,"Sirayanian, Orsen",male,22.0,7.2292,U,C,Mr,Low,1,1,YoungAdult,0
+1,"Icard, Amelie",female,38.0,80.0,B,S,Miss,VeryHigh,1,1,Adult,1
+1,"Harris, Henry Birkhardt",male,45.0,83.475,C,S,Mr,VeryHigh,2,0,Adult,0
+3,"Skoog, Harald",male,4.0,27.9,U,S,Master,High,6,0,Child,0
+1,"Stewart, Albert A",male,32.25215146299484,27.7208,U,C,Mr,High,1,1,YoungAdult,0
+3,"Moubarek, Gerios",male,5.482641509433963,15.2458,U,C,Master,High,3,0,Child,1
+2,"Nye, (Elizabeth Ramell)",female,29.0,10.5,F,S,Mrs,Medium,1,1,YoungAdult,1
+3,"Crease, Ernest James",male,19.0,8.1583,U,S,Mr,Medium,1,1,Teen,0
+3,"Andersson, Erna Alexandra",female,17.0,7.925,U,S,Miss,Low,7,0,Teen,1
+3,"Kink, Vincenz",male,26.0,8.6625,U,S,Mr,Medium,3,0,YoungAdult,0
+2,"Jenkin, Stephen Curnow",male,32.0,10.5,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Goodwin, Lillian Amy",female,16.0,46.9,U,S,Miss,High,8,0,Teen,0
+2,"Hood, Ambrose Jr",male,21.0,73.5,U,S,Mr,VeryHigh,1,1,YoungAdult,0
+3,"Chronopoulos, Apostolos",male,26.0,14.4542,U,C,Mr,Medium,2,0,YoungAdult,0
+3,"Bing, Lee",male,32.0,56.4958,U,S,Mr,High,1,1,YoungAdult,1
+3,"Moen, Sigurd Hansen",male,25.0,7.65,F,S,Mr,Low,1,1,YoungAdult,0
+3,"Staneff, Ivan",male,32.25215146299484,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Moutal, Rahamin Haim",male,32.25215146299484,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Caldwell, Alden Gates",male,0.83,29.0,U,S,Master,High,3,0,Child,1
+3,"Dowdell, Elizabeth",female,30.0,12.475,U,S,Miss,Medium,1,1,YoungAdult,1
+3,"Waelens, Achille",male,22.0,9.0,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Sheerlinck, Jan Baptist",male,29.0,9.5,U,S,Mr,Medium,1,1,YoungAdult,1
+3,"McDermott, Brigdet Delia",female,21.8243661971831,7.7875,U,Q,Miss,Low,1,1,YoungAdult,1
+1,"Carrau, Francisco M",male,28.0,47.1,U,S,Mr,High,1,1,YoungAdult,0
+2,"Ilett, Bertha",female,17.0,10.5,U,S,Miss,Medium,1,1,Teen,1
+3,"Backstrom, Karl Alfred (Maria Mathilda Gustafsson)",female,33.0,15.85,U,S,Mrs,High,4,0,YoungAdult,1
+3,"Ford, William Neal",male,16.0,34.375,U,S,Mr,High,5,0,Teen,0
+3,"Slocovski, Selman Francis",male,32.25215146299484,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Fortune, Mabel Helen",female,23.0,263.0,C,S,Miss,VeryHigh,6,0,YoungAdult,1
+3,"Celotti, Francesco",male,24.0,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Christmann, Emil",male,29.0,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Andreasson, Paul Edvin",male,20.0,7.8542,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Chaffee, Herbert Fuller",male,46.0,61.175,E,S,Mr,VeryHigh,2,0,Adult,0
+3,"Dean, Bertram Frank",male,26.0,20.575,U,S,Mr,High,4,0,YoungAdult,0
+3,"Coxon, Daniel",male,59.0,7.25,U,S,Mr,Low,1,1,Adult,0
+3,"Shorney, Charles Joseph",male,32.25215146299484,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Goldschmidt, George B",male,71.0,34.6542,A,C,Mr,High,1,1,Senior,0
+1,"Greenfield, William Bertram",male,23.0,63.3583,D,C,Mr,VeryHigh,2,0,YoungAdult,1
+2,"Doling, John T (Ada Julia Bone)",female,34.0,23.0,U,S,Mrs,High,2,0,YoungAdult,1
+2,"Kantor, Sinai",male,34.0,26.0,U,S,Mr,High,2,0,YoungAdult,0
+3,"Petranec, Matilda",female,28.0,7.8958,U,S,Miss,Low,1,1,YoungAdult,0
+3,"Petroff, Pastcho (""Pentcho"")",male,32.25215146299484,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+1,"White, Richard Frasar",male,21.0,77.2875,D,S,Mr,VeryHigh,2,0,YoungAdult,0
+3,"Johansson, Gustaf Joel",male,33.0,8.6542,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Gustafsson, Anders Vilhelm",male,37.0,7.925,U,S,Mr,Low,3,0,Adult,0
+3,"Mionoff, Stoytcho",male,28.0,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Salkjelsvik, Anna Kristine",female,21.0,7.65,U,S,Miss,Low,1,1,YoungAdult,1
+3,"Moss, Albert Johan",male,32.25215146299484,7.775,U,S,Mr,Low,1,1,YoungAdult,1
+3,"Rekic, Tido",male,38.0,7.8958,U,S,Mr,Low,1,1,Adult,0
+3,"Moran, Bertha",female,21.8243661971831,24.15,U,Q,Miss,High,2,0,YoungAdult,1
+1,"Porter, Walter Chamberlain",male,47.0,52.0,C,S,Mr,High,1,1,Adult,0
+3,"Zabour, Hileni",female,14.5,14.4542,U,C,Miss,Medium,2,0,Teen,0
+3,"Barton, David John",male,22.0,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Jussila, Katriina",female,20.0,9.825,U,S,Miss,Medium,2,0,YoungAdult,0
+3,"Attalah, Malake",female,17.0,14.4583,U,C,Miss,High,1,1,Teen,0
+3,"Pekoniemi, Edvard",male,21.0,7.925,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Connors, Patrick",male,70.5,7.75,U,Q,Mr,Low,1,1,Senior,0
+2,"Turpin, William John Robert",male,29.0,21.0,U,S,Mr,High,2,0,YoungAdult,0
+1,"Baxter, Quigg Edmond",male,24.0,247.5208,B,C,Mr,VeryHigh,2,0,YoungAdult,0
+3,"Andersson, Ellis Anna Maria",female,2.0,31.275,U,S,Miss,High,7,0,Child,0
+2,"Hickman, Stanley George",male,21.0,73.5,U,S,Mr,VeryHigh,3,0,YoungAdult,0
+3,"Moore, Leonard Charles",male,32.25215146299484,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Nasser, Nicholas",male,32.5,30.0708,U,C,Mr,High,2,0,YoungAdult,0
+2,"Webber, Susan",female,32.5,13.0,E,S,Miss,Medium,1,1,YoungAdult,1
+1,"White, Percival Wayland",male,54.0,77.2875,D,S,Mr,VeryHigh,2,0,Adult,0
+3,"Nicola-Yarred, Elias",male,12.0,11.2417,U,C,Master,Medium,2,0,Child,1
+3,"McMahon, Martin",male,32.25215146299484,7.75,U,Q,Mr,Low,1,1,YoungAdult,0
+3,"Madsen, Fridtjof Arne",male,24.0,7.1417,U,S,Mr,Low,1,1,YoungAdult,1
+3,"Peter, Anna",female,21.8243661971831,22.3583,F,C,Miss,High,3,0,YoungAdult,1
+3,"Ekstrom, Johan",male,45.0,6.975,U,S,Mr,Low,1,1,Adult,0
+3,"Drazenoic, Jozef",male,33.0,7.8958,U,C,Mr,Low,1,1,YoungAdult,0
+3,"Coelho, Domingos Fernandeo",male,20.0,7.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Robins, Alexander A (Grace Charity Laury)",female,47.0,14.5,U,S,Mrs,High,2,0,Adult,0
+2,"Weisz, Leopold (Mathilde Francoise Pede)",female,29.0,26.0,U,S,Mrs,High,2,0,YoungAdult,1
+2,"Sobey, Samuel James Hayden",male,25.0,13.0,U,S,Mr,Medium,1,1,YoungAdult,0
+2,"Richard, Emile",male,23.0,15.0458,U,C,Mr,High,1,1,YoungAdult,0
+1,"Newsom, Helen Monypeny",female,19.0,26.2833,D,S,Miss,High,3,0,Teen,1
+1,"Futrelle, Jacques Heath",male,37.0,53.1,C,S,Mr,High,2,0,Adult,0
+3,"Osen, Olaf Elon",male,16.0,9.2167,U,S,Mr,Medium,1,1,Teen,0
+1,"Giglio, Victor",male,24.0,79.2,B,C,Mr,VeryHigh,1,1,YoungAdult,0
+3,"Boulos, Joseph (Sultana)",female,36.91812865497076,15.2458,U,C,Mrs,High,3,0,Adult,0
+3,"Nysten, Anna Sofia",female,22.0,7.75,U,S,Miss,Low,1,1,YoungAdult,1
+3,"Hakkarainen, Pekka Pietari (Elin Matilda Dolck)",female,24.0,15.85,U,S,Mrs,High,2,0,YoungAdult,1
+3,"Burke, Jeremiah",male,19.0,6.75,U,Q,Mr,Low,1,1,Teen,0
+2,"Andrew, Edgardo Samuel",male,18.0,11.5,U,S,Mr,Medium,1,1,Teen,0
+2,"Nicholls, Joseph Charles",male,19.0,36.75,U,S,Mr,High,3,0,Teen,0
+3,"Andersson, August Edvard (""Wennerstrom"")",male,27.0,7.7958,U,S,Mr,Low,1,1,YoungAdult,1
+3,"Ford, Robina Maggie ""Ruby""",female,9.0,34.375,U,S,Miss,High,5,0,Child,0
+2,"Navratil, Michel (""Louis M Hoffman"")",male,36.5,26.0,F,S,Mr,High,3,0,Adult,0
+2,"Byles, Thomas Roussel Davids",male,42.0,13.0,U,S,Rare,Medium,1,1,Adult,0
+2,"Bateman, Robert James",male,51.0,12.525,U,S,Rare,Medium,1,1,Adult,0
+1,"Pears, Thomas (Edith Wearne)",female,22.0,66.6,C,S,Mrs,VeryHigh,2,0,YoungAdult,1
+3,"Meo, Alfonzo",male,55.5,8.05,U,S,Mr,Low,1,1,Adult,0
+3,"van Billiard, Austin Blyler",male,40.5,14.5,U,S,Mr,High,3,0,Adult,0
+3,"Olsen, Ole Martin",male,32.25215146299484,7.3125,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Williams, Charles Duane",male,51.0,61.3792,U,C,Mr,VeryHigh,2,0,Adult,0
+3,"Gilnagh, Katherine ""Katie""",female,16.0,7.7333,U,Q,Miss,Low,1,1,Teen,1
+3,"Corn, Harry",male,30.0,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Smiljanic, Mile",male,32.25215146299484,8.6625,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Sage, Thomas Henry",male,5.482641509433963,69.55,U,S,Master,VeryHigh,11,0,Child,0
+3,"Cribb, John Hatfield",male,44.0,16.1,U,S,Mr,High,2,0,Adult,0
+2,"Watt, James (Elizabeth ""Bessie"" Inglis Milne)",female,40.0,15.75,U,S,Mrs,High,1,1,Adult,1
+3,"Bengtsson, John Viktor",male,26.0,7.775,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Calic, Jovo",male,17.0,8.6625,U,S,Mr,Medium,1,1,Teen,0
+3,"Panula, Eino Viljami",male,1.0,39.6875,U,S,Master,High,6,0,Child,0
+3,"Goldsmith, Frank John William ""Frankie""",male,9.0,20.525,U,S,Master,High,3,0,Child,1
+1,"Chibnall, (Edith Martha Bowerman)",female,36.91812865497076,55.0,E,S,Mrs,High,2,0,Adult,1
+3,"Skoog, William (Anna Bernhardina Karlsson)",female,45.0,27.9,U,S,Mrs,High,6,0,Adult,0
+1,"Baumann, John D",male,32.25215146299484,25.925,U,S,Mr,High,1,1,YoungAdult,0
+3,"Ling, Lee",male,28.0,56.4958,U,S,Mr,High,1,1,YoungAdult,0
+1,"Van der hoef, Wyckoff",male,61.0,33.5,B,S,Mr,High,1,1,Senior,0
+3,"Rice, Arthur",male,4.0,29.125,U,Q,Master,High,6,0,Child,0
+3,"Johnson, Eleanor Ileen",female,1.0,11.1333,U,S,Miss,Medium,3,0,Child,1
+3,"Sivola, Antti Wilhelm",male,21.0,7.925,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Smith, James Clinch",male,56.0,30.6958,A,C,Mr,High,1,1,Adult,0
+3,"Klasen, Klas Albin",male,18.0,7.8542,U,S,Mr,Low,3,0,Teen,0
+3,"Lefebre, Henry Forbes",male,5.482641509433963,25.4667,U,S,Master,High,5,0,Child,0
+1,"Isham, Ann Elizabeth",female,50.0,28.7125,C,C,Miss,High,1,1,Adult,0
+2,"Hale, Reginald",male,30.0,13.0,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Leonard, Lionel",male,36.0,0.0,U,S,Mr,Low,1,1,Adult,0
+3,"Sage, Constance Gladys",female,21.8243661971831,69.55,U,S,Miss,VeryHigh,11,0,YoungAdult,0
+2,"Pernot, Rene",male,32.25215146299484,15.05,U,C,Mr,High,1,1,YoungAdult,0
+3,"Asplund, Clarence Gustaf Hugo",male,9.0,31.3875,U,S,Master,High,7,0,Child,0
+2,"Becker, Richard F",male,1.0,39.0,F,S,Master,High,4,0,Child,1
+3,"Kink-Heilmann, Luise Gretchen",female,4.0,22.025,U,S,Miss,High,3,0,Child,1
+1,"Rood, Hugh Roscoe",male,32.25215146299484,50.0,A,S,Mr,High,1,1,YoungAdult,0
+3,"O'Brien, Thomas (Johanna ""Hannah"" Godfrey)",female,36.91812865497076,15.5,U,Q,Mrs,High,2,0,Adult,1
+1,"Romaine, Charles Hallace (""Mr C Rolmane"")",male,45.0,26.55,U,S,Mr,High,1,1,Adult,1
+3,"Bourke, John",male,40.0,15.5,U,Q,Mr,High,3,0,Adult,0
+3,"Turcin, Stjepan",male,36.0,7.8958,U,S,Mr,Low,1,1,Adult,0
+2,"Pinsky, (Rosa)",female,32.0,13.0,U,S,Mrs,Medium,1,1,YoungAdult,1
+2,"Carbines, William",male,19.0,13.0,U,S,Mr,Medium,1,1,Teen,0
+3,"Andersen-Jensen, Carla Christine Nielsine",female,19.0,7.8542,U,S,Miss,Low,2,0,Teen,1
+2,"Navratil, Michel M",male,3.0,26.0,F,S,Master,High,3,0,Child,1
+1,"Brown, James Joseph (Margaret Tobin)",female,44.0,27.7208,B,C,Mrs,High,1,1,Adult,1
+1,"Lurette, Elise",female,58.0,146.5208,B,C,Miss,VeryHigh,1,1,Adult,1
+3,"Mernagh, Robert",male,32.25215146299484,7.75,U,Q,Mr,Low,1,1,YoungAdult,0
+3,"Olsen, Karl Siegwart Andreas",male,42.0,8.4042,U,S,Mr,Medium,2,0,Adult,0
+3,"Madigan, Margaret ""Maggie""",female,21.8243661971831,7.75,U,Q,Miss,Low,1,1,YoungAdult,1
+2,"Yrois, Henriette (""Mrs Harbeck"")",female,24.0,13.0,U,S,Miss,Medium,1,1,YoungAdult,0
+3,"Vande Walle, Nestor Cyriel",male,28.0,9.5,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Sage, Frederick",male,32.25215146299484,69.55,U,S,Mr,VeryHigh,11,0,YoungAdult,0
+3,"Johanson, Jakob Alfred",male,34.0,6.4958,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Youseff, Gerious",male,45.5,7.225,U,C,Mr,Low,1,1,Adult,0
+3,"Cohen, Gurshon ""Gus""",male,18.0,8.05,U,S,Mr,Low,1,1,Teen,1
+3,"Strom, Telma Matilda",female,2.0,10.4625,G,S,Miss,Medium,2,0,Child,0
+3,"Backstrom, Karl Alfred",male,32.0,15.85,U,S,Mr,High,2,0,YoungAdult,0
+3,"Albimona, Nassef Cassem",male,26.0,18.7875,U,C,Mr,High,1,1,YoungAdult,1
+3,"Carr, Helen ""Ellen""",female,16.0,7.75,U,Q,Miss,Low,1,1,Teen,1
+1,"Blank, Henry",male,40.0,31.0,A,C,Mr,High,1,1,Adult,1
+3,"Ali, Ahmed",male,24.0,7.05,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Cameron, Clear Annie",female,35.0,21.0,U,S,Miss,High,1,1,YoungAdult,1
+3,"Perkin, John Henry",male,22.0,7.25,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Givard, Hans Kristensen",male,30.0,13.0,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Kiernan, Philip",male,32.25215146299484,7.75,U,Q,Mr,Low,2,0,YoungAdult,0
+1,"Newell, Madeleine",female,31.0,113.275,D,C,Miss,VeryHigh,2,0,YoungAdult,1
+3,"Honkanen, Eliina",female,27.0,7.925,U,S,Miss,Low,1,1,YoungAdult,1
+2,"Jacobsohn, Sidney Samuel",male,42.0,27.0,U,S,Mr,High,2,0,Adult,0
+1,"Bazzani, Albina",female,32.0,76.2917,D,C,Miss,VeryHigh,1,1,YoungAdult,1
+2,"Harris, Walter",male,30.0,10.5,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Sunderland, Victor Francis",male,16.0,8.05,U,S,Mr,Low,1,1,Teen,1
+2,"Bracken, James H",male,27.0,13.0,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Green, George Henry",male,51.0,8.05,U,S,Mr,Low,1,1,Adult,0
+3,"Nenkoff, Christo",male,32.25215146299484,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Hoyt, Frederick Maxfield",male,38.0,90.0,C,S,Mr,VeryHigh,2,0,Adult,1
+3,"Berglund, Karl Ivar Sven",male,22.0,9.35,U,S,Mr,Medium,1,1,YoungAdult,0
+2,"Mellors, William John",male,19.0,10.5,U,S,Mr,Medium,1,1,Teen,1
+3,"Lovell, John Hall (""Henry"")",male,20.5,7.25,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Fahlstrom, Arne Jonas",male,18.0,13.0,U,S,Mr,Medium,1,1,Teen,0
+3,"Lefebre, Mathilde",female,21.8243661971831,25.4667,U,S,Miss,High,5,0,YoungAdult,0
+1,"Harris, Henry Birkhardt (Irene Wallach)",female,35.0,83.475,C,S,Mrs,VeryHigh,2,0,YoungAdult,1
+3,"Larsson, Bengt Edvin",male,29.0,7.775,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Sjostedt, Ernst Adolf",male,59.0,13.5,U,S,Mr,Medium,1,1,Adult,0
+3,"Asplund, Lillian Gertrud",female,5.0,31.3875,U,S,Miss,High,7,0,Child,1
+2,"Leyson, Robert William Norman",male,24.0,10.5,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Harknett, Alice Phoebe",female,21.8243661971831,7.55,U,S,Miss,Low,1,1,YoungAdult,0
+2,"Hold, Stephen",male,44.0,26.0,U,S,Mr,High,2,0,Adult,0
+2,"Collyer, Marjorie ""Lottie""",female,8.0,26.25,U,S,Miss,High,3,0,Child,1
+2,"Pengelly, Frederick William",male,19.0,10.5,U,S,Mr,Medium,1,1,Teen,0
+2,"Hunt, George Henry",male,33.0,12.275,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Zabour, Thamine",female,21.8243661971831,14.4542,U,C,Miss,Medium,2,0,YoungAdult,0
+3,"Murphy, Katherine ""Kate""",female,21.8243661971831,15.5,U,Q,Miss,High,2,0,YoungAdult,1
+2,"Coleridge, Reginald Charles",male,29.0,10.5,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Maenpaa, Matti Alexanteri",male,22.0,7.125,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Attalah, Sleiman",male,30.0,7.225,U,C,Mr,Low,1,1,YoungAdult,0
+1,"Minahan, William Edward",male,44.0,90.0,C,Q,Rare,VeryHigh,3,0,Adult,0
+3,"Lindahl, Agda Thorilda Viktoria",female,25.0,7.775,U,S,Miss,Low,1,1,YoungAdult,0
+2,"Hamalainen, William (Anna)",female,24.0,14.5,U,S,Mrs,High,3,0,YoungAdult,1
+1,"Beckwith, Richard Leonard",male,37.0,52.5542,D,S,Mr,High,3,0,Adult,1
+2,"Carter, Ernest Courtenay",male,54.0,26.0,U,S,Rare,High,2,0,Adult,0
+3,"Reed, James George",male,32.25215146299484,7.25,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Strom, Wilhelm (Elna Matilda Persson)",female,29.0,10.4625,G,S,Mrs,Medium,3,0,YoungAdult,0
+1,"Stead, William Thomas",male,62.0,26.55,C,S,Mr,High,1,1,Senior,0
+3,"Lobb, William Arthur",male,30.0,16.1,U,S,Mr,High,2,0,YoungAdult,0
+3,"Rosblom, Viktor (Helena Wilhelmina)",female,41.0,20.2125,U,S,Mrs,High,3,0,Adult,0
+3,"Touma, Darwis (Hanne Youssef Razi)",female,29.0,15.2458,U,C,Mrs,High,3,0,YoungAdult,1
+1,"Thorne, Gertrude Maybelle",female,36.91812865497076,79.2,U,C,Mrs,VeryHigh,1,1,Adult,1
+1,"Cherry, Gladys",female,30.0,86.5,B,S,Miss,VeryHigh,1,1,YoungAdult,1
+1,"Ward, Anna",female,35.0,512.3292,U,C,Miss,VeryHigh,1,1,YoungAdult,1
+2,"Parrish, (Lutie Davis)",female,50.0,26.0,U,S,Mrs,High,2,0,Adult,1
+3,"Smith, Thomas",male,32.25215146299484,7.75,U,Q,Mr,Low,1,1,YoungAdult,0
+3,"Asplund, Edvin Rojj Felix",male,3.0,31.3875,U,S,Master,High,7,0,Child,1
+1,"Taussig, Emil",male,52.0,79.65,E,S,Mr,VeryHigh,3,0,Adult,0
+1,"Harrison, William",male,40.0,0.0,B,S,Mr,Low,1,1,Adult,0
+3,"Henry, Delia",female,21.8243661971831,7.75,U,Q,Miss,Low,1,1,YoungAdult,0
+2,"Reeves, David",male,36.0,10.5,U,S,Mr,Medium,1,1,Adult,0
+3,"Panula, Ernesti Arvid",male,16.0,39.6875,U,S,Mr,High,6,0,Teen,0
+3,"Persson, Ernst Ulrik",male,25.0,7.775,U,S,Mr,Low,2,0,YoungAdult,1
+1,"Graham, William Thompson (Edith Junkins)",female,58.0,153.4625,C,S,Mrs,VeryHigh,2,0,Adult,1
+1,"Bissette, Amelia",female,35.0,135.6333,C,S,Miss,VeryHigh,1,1,YoungAdult,1
+1,"Cairns, Alexander",male,32.25215146299484,31.0,U,S,Mr,High,1,1,YoungAdult,0
+3,"Tornquist, William Henry",male,25.0,0.0,U,S,Mr,Low,1,1,YoungAdult,1
+2,"Mellinger, (Elizabeth Anne Maidment)",female,41.0,19.5,U,S,Mrs,High,2,0,Adult,1
+1,"Natsch, Charles H",male,37.0,29.7,C,C,Mr,High,2,0,Adult,0
+3,"Healy, Hanora ""Nora""",female,21.8243661971831,7.75,U,Q,Miss,Low,1,1,YoungAdult,1
+1,"Andrews, Kornelia Theodosia",female,63.0,77.9583,D,S,Miss,VeryHigh,2,0,Senior,1
+3,"Lindblom, Augusta Charlotta",female,45.0,7.75,U,S,Miss,Low,1,1,Adult,0
+2,"Parkes, Francis ""Frank""",male,32.25215146299484,0.0,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Rice, Eric",male,7.0,29.125,U,Q,Master,High,6,0,Child,0
+3,"Abbott, Stanton (Rosa Hunt)",female,35.0,20.25,U,S,Mrs,High,3,0,YoungAdult,1
+3,"Duane, Frank",male,65.0,7.75,U,Q,Mr,Low,1,1,Senior,0
+3,"Olsson, Nils Johan Goransson",male,28.0,7.8542,U,S,Mr,Low,1,1,YoungAdult,0
+3,"de Pelsmaeker, Alfons",male,16.0,9.5,U,S,Mr,Medium,1,1,Teen,0
+3,"Dorking, Edward Arthur",male,19.0,8.05,U,S,Mr,Low,1,1,Teen,1
+1,"Smith, Richard William",male,32.25215146299484,26.0,A,S,Mr,High,1,1,YoungAdult,0
+3,"Stankovic, Ivan",male,33.0,8.6625,U,C,Mr,Medium,1,1,YoungAdult,0
+3,"de Mulder, Theodore",male,30.0,9.5,U,S,Mr,Medium,1,1,YoungAdult,1
+3,"Naidenoff, Penko",male,22.0,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Hosono, Masabumi",male,42.0,13.0,U,S,Mr,Medium,1,1,Adult,1
+3,"Connolly, Kate",female,22.0,7.75,U,Q,Miss,Low,1,1,YoungAdult,1
+1,"Barber, Ellen ""Nellie""",female,26.0,78.85,U,S,Miss,VeryHigh,1,1,YoungAdult,1
+1,"Bishop, Dickinson H (Helen Walton)",female,19.0,91.0792,B,C,Mrs,VeryHigh,2,0,Teen,1
+2,"Levy, Rene Jacques",male,36.0,12.875,D,C,Mr,Medium,1,1,Adult,0
+3,"Haas, Aloisia",female,24.0,8.85,U,S,Miss,Medium,1,1,YoungAdult,0
+3,"Mineff, Ivan",male,24.0,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Lewy, Ervin G",male,32.25215146299484,27.7208,U,C,Mr,High,1,1,YoungAdult,0
+3,"Hanna, Mansour",male,23.5,7.2292,U,C,Mr,Low,1,1,YoungAdult,0
+1,"Allison, Helen Loraine",female,2.0,151.55,C,S,Miss,VeryHigh,4,0,Child,0
+1,"Saalfeld, Adolphe",male,32.25215146299484,30.5,C,S,Mr,High,1,1,YoungAdult,1
+1,"Baxter, James (Helene DeLaudeniere Chaput)",female,50.0,247.5208,B,C,Mrs,VeryHigh,2,0,Adult,1
+3,"Kelly, Anna Katherine ""Annie Kate""",female,21.8243661971831,7.75,U,Q,Miss,Low,1,1,YoungAdult,1
+3,"McCoy, Bernard",male,32.25215146299484,23.25,U,Q,Mr,High,3,0,YoungAdult,1
+3,"Johnson, William Cahoone Jr",male,19.0,0.0,U,S,Mr,Low,1,1,Teen,0
+2,"Keane, Nora A",female,21.8243661971831,12.35,E,Q,Miss,Medium,1,1,YoungAdult,1
+3,"Williams, Howard Hugh ""Harry""",male,32.25215146299484,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Allison, Hudson Trevor",male,0.92,151.55,C,S,Master,VeryHigh,4,0,Child,1
+1,"Fleming, Margaret",female,21.8243661971831,110.8833,U,C,Miss,VeryHigh,1,1,YoungAdult,1
+1,"Penasco y Castellana, Victor de Satode (Maria Josefa Perez de Soto y Vallejo)",female,17.0,108.9,C,C,Mrs,VeryHigh,2,0,Teen,1
+2,"Abelson, Samuel",male,30.0,24.0,U,C,Mr,High,2,0,YoungAdult,0
+1,"Francatelli, Laura Mabel",female,30.0,56.9292,E,C,Miss,High,1,1,YoungAdult,1
+1,"Hays, Margaret Bechstein",female,24.0,83.1583,C,C,Miss,VeryHigh,1,1,YoungAdult,1
+1,"Ryerson, Emily Borie",female,18.0,262.375,B,C,Miss,VeryHigh,5,0,Teen,1
+2,"Lahtinen, William (Anna Sylfven)",female,26.0,26.0,U,S,Mrs,High,3,0,YoungAdult,0
+3,"Hendekovic, Ignjac",male,28.0,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Hart, Benjamin",male,43.0,26.25,U,S,Mr,High,3,0,Adult,0
+3,"Nilsson, Helmina Josefina",female,26.0,7.8542,U,S,Miss,Low,1,1,YoungAdult,1
+2,"Kantor, Sinai (Miriam Sternin)",female,24.0,26.0,U,S,Mrs,High,2,0,YoungAdult,1
+2,"Moraweck, Ernest",male,54.0,14.0,U,S,Rare,Medium,1,1,Adult,0
+1,"Wick, Mary Natalie",female,31.0,164.8667,C,S,Miss,VeryHigh,3,0,YoungAdult,1
+1,"Spedden, Frederic Oakley (Margaretta Corning Stone)",female,40.0,134.5,E,C,Mrs,VeryHigh,3,0,Adult,1
+3,"Dennis, Samuel",male,22.0,7.25,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Danoff, Yoto",male,27.0,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Slayter, Hilda Mary",female,30.0,12.35,U,Q,Miss,Medium,1,1,YoungAdult,1
+2,"Caldwell, Albert Francis (Sylvia Mae Harbaugh)",female,22.0,29.0,U,S,Mrs,High,3,0,YoungAdult,1
+3,"Sage, George John Jr",male,32.25215146299484,69.55,U,S,Mr,VeryHigh,11,0,YoungAdult,0
+1,"Young, Marie Grice",female,36.0,135.6333,C,C,Miss,VeryHigh,1,1,Adult,1
+3,"Nysveen, Johan Hansen",male,61.0,6.2375,U,S,Mr,Low,1,1,Senior,0
+2,"Ball, (Ada E Hall)",female,36.0,13.0,D,S,Mrs,Medium,1,1,Adult,1
+3,"Goldsmith, Frank John (Emily Alice Brown)",female,31.0,20.525,U,S,Mrs,High,3,0,YoungAdult,1
+1,"Hippach, Jean Gertrude",female,16.0,57.9792,B,C,Miss,VeryHigh,2,0,Teen,1
+3,"McCoy, Agnes",female,21.8243661971831,23.25,U,Q,Miss,High,3,0,YoungAdult,1
+1,"Partner, Austen",male,45.5,28.5,C,S,Mr,High,1,1,Adult,0
+1,"Graham, George Edward",male,38.0,153.4625,C,S,Mr,VeryHigh,2,0,Adult,0
+3,"Vander Planke, Leo Edmondus",male,16.0,18.0,U,S,Mr,High,3,0,Teen,0
+1,"Frauenthal, Henry William (Clara Heinsheimer)",female,36.91812865497076,133.65,U,S,Mrs,VeryHigh,2,0,Adult,1
+3,"Denkoff, Mitto",male,32.25215146299484,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Pears, Thomas Clinton",male,29.0,66.6,C,S,Mr,VeryHigh,2,0,YoungAdult,0
+1,"Burns, Elizabeth Margaret",female,41.0,134.5,E,C,Miss,VeryHigh,1,1,Adult,1
+3,"Dahl, Karl Edwart",male,45.0,8.05,U,S,Mr,Low,1,1,Adult,1
+1,"Blackwell, Stephen Weart",male,45.0,35.5,T,S,Mr,High,1,1,Adult,0
+2,"Navratil, Edmond Roger",male,2.0,26.0,F,S,Master,High,3,0,Child,1
+1,"Fortune, Alice Elizabeth",female,24.0,263.0,C,S,Miss,VeryHigh,6,0,YoungAdult,1
+2,"Collander, Erik Gustaf",male,28.0,13.0,U,S,Mr,Medium,1,1,YoungAdult,0
+2,"Sedgwick, Charles Frederick Waddington",male,25.0,13.0,U,S,Mr,Medium,1,1,YoungAdult,0
+2,"Fox, Stanley Hubert",male,36.0,13.0,U,S,Mr,Medium,1,1,Adult,0
+2,"Brown, Amelia ""Mildred""",female,24.0,13.0,F,S,Miss,Medium,1,1,YoungAdult,1
+2,"Smith, Marion Elsie",female,40.0,13.0,U,S,Miss,Medium,1,1,Adult,1
+3,"Davison, Thomas Henry (Mary E Finck)",female,36.91812865497076,16.1,U,S,Mrs,High,2,0,Adult,1
+3,"Coutts, William Loch ""William""",male,3.0,15.9,U,S,Master,High,3,0,Child,1
+3,"Dimic, Jovan",male,42.0,8.6625,U,S,Mr,Medium,1,1,Adult,0
+3,"Odahl, Nils Martin",male,23.0,9.225,U,S,Mr,Medium,1,1,YoungAdult,0
+1,"Williams-Lambert, Fletcher Fellows",male,32.25215146299484,35.0,C,S,Mr,High,1,1,YoungAdult,0
+3,"Elias, Tannous",male,15.0,7.2292,U,C,Mr,Low,3,0,Teen,0
+3,"Arnold-Franchi, Josef",male,25.0,17.8,U,S,Mr,High,2,0,YoungAdult,0
+3,"Yousif, Wazli",male,32.25215146299484,7.225,U,C,Mr,Low,1,1,YoungAdult,0
+3,"Vanden Steen, Leo Peter",male,28.0,9.5,U,S,Mr,Medium,1,1,YoungAdult,0
+1,"Bowerman, Elsie Edith",female,22.0,55.0,E,S,Miss,High,2,0,YoungAdult,1
+2,"Funk, Annie Clemmer",female,38.0,13.0,U,S,Miss,Medium,1,1,Adult,0
+3,"McGovern, Mary",female,21.8243661971831,7.8792,U,Q,Miss,Low,1,1,YoungAdult,1
+3,"Mockler, Helen Mary ""Ellie""",female,21.8243661971831,7.8792,U,Q,Miss,Low,1,1,YoungAdult,1
+3,"Skoog, Wilhelm",male,40.0,27.9,U,S,Mr,High,6,0,Adult,0
+2,"del Carlo, Sebastiano",male,29.0,27.7208,U,C,Mr,High,2,0,YoungAdult,0
+3,"Barbara, (Catherine David)",female,45.0,14.4542,U,C,Mrs,Medium,2,0,Adult,0
+3,"Asim, Adola",male,35.0,7.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"O'Brien, Thomas",male,32.25215146299484,15.5,U,Q,Mr,High,2,0,YoungAdult,0
+3,"Adahl, Mauritz Nils Martin",male,30.0,7.25,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Warren, Frank Manley (Anna Sophia Atkinson)",female,60.0,75.25,D,C,Mrs,VeryHigh,2,0,Senior,1
+3,"Moussa, (Mantoura Boulos)",female,36.91812865497076,7.2292,U,C,Mrs,Low,1,1,Adult,1
+3,"Jermyn, Annie",female,21.8243661971831,7.75,U,Q,Miss,Low,1,1,YoungAdult,1
+1,"Aubart, Leontine Pauline",female,24.0,69.3,B,C,Mrs,VeryHigh,1,1,YoungAdult,1
+1,"Harder, George Achilles",male,25.0,55.4417,E,C,Mr,High,2,0,YoungAdult,1
+3,"Wiklund, Jakob Alfred",male,18.0,6.4958,U,S,Mr,Low,2,0,Teen,0
+3,"Beavan, William Thomas",male,19.0,8.05,U,S,Mr,Low,1,1,Teen,0
+1,"Ringhini, Sante",male,22.0,135.6333,U,C,Mr,VeryHigh,1,1,YoungAdult,0
+3,"Palsson, Stina Viola",female,3.0,21.075,U,S,Miss,High,5,0,Child,0
+1,"Meyer, Edgar Joseph (Leila Saks)",female,36.91812865497076,82.1708,U,C,Mrs,VeryHigh,2,0,Adult,1
+3,"Landergren, Aurora Adelia",female,22.0,7.25,U,S,Miss,Low,1,1,YoungAdult,1
+1,"Widener, Harry Elkins",male,27.0,211.5,C,C,Mr,VeryHigh,3,0,YoungAdult,0
+3,"Betros, Tannous",male,20.0,4.0125,U,C,Mr,Low,1,1,YoungAdult,0
+3,"Gustafsson, Karl Gideon",male,19.0,7.775,U,S,Mr,Low,1,1,Teen,0
+1,"Bidois, Rosalie",female,42.0,227.525,U,C,Miss,VeryHigh,1,1,Adult,1
+3,"Nakid, Maria (""Mary"")",female,1.0,15.7417,U,C,Miss,High,3,0,Child,1
+3,"Tikkanen, Juho",male,32.0,7.925,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Holverson, Alexander Oskar (Mary Aline Towner)",female,35.0,52.0,U,S,Mrs,High,2,0,YoungAdult,1
+3,"Plotcharsky, Vasil",male,32.25215146299484,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Davies, Charles Henry",male,18.0,73.5,U,S,Mr,VeryHigh,1,1,Teen,0
+3,"Goodwin, Sidney Leonard",male,1.0,46.9,U,S,Master,High,8,0,Child,0
+2,"Buss, Kate",female,36.0,13.0,U,S,Miss,Medium,1,1,Adult,1
+3,"Sadlier, Matthew",male,32.25215146299484,7.7292,U,Q,Mr,Low,1,1,YoungAdult,0
+2,"Lehmann, Bertha",female,17.0,12.0,U,C,Miss,Medium,1,1,Teen,1
+1,"Carter, William Ernest",male,36.0,120.0,B,S,Mr,VeryHigh,4,0,Adult,1
+3,"Jansson, Carl Olof",male,21.0,7.7958,U,S,Mr,Low,1,1,YoungAdult,1
+3,"Gustafsson, Johan Birger",male,28.0,7.925,U,S,Mr,Low,3,0,YoungAdult,0
+1,"Newell, Marjorie",female,23.0,113.275,D,C,Miss,VeryHigh,2,0,YoungAdult,1
+3,"Sandstrom, Hjalmar (Agnes Charlotta Bengtsson)",female,24.0,16.7,G,S,Mrs,High,3,0,YoungAdult,1
+3,"Johansson, Erik",male,22.0,7.7958,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Olsson, Elina",female,31.0,7.8542,U,S,Miss,Low,1,1,YoungAdult,0
+2,"McKane, Peter David",male,46.0,26.0,U,S,Mr,High,1,1,Adult,0
+2,"Pain, Alfred",male,23.0,10.5,U,S,Rare,Medium,1,1,YoungAdult,0
+2,"Trout, William H (Jessie L)",female,28.0,12.65,U,S,Mrs,Medium,1,1,YoungAdult,1
+3,"Niskanen, Juha",male,39.0,7.925,U,S,Mr,Low,1,1,Adult,1
+3,"Adams, John",male,26.0,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Jussila, Mari Aina",female,21.0,9.825,U,S,Miss,Medium,2,0,YoungAdult,0
+3,"Hakkarainen, Pekka Pietari",male,28.0,15.85,U,S,Mr,High,2,0,YoungAdult,0
+3,"Oreskovic, Marija",female,20.0,8.6625,U,S,Miss,Medium,1,1,YoungAdult,0
+2,"Gale, Shadrach",male,34.0,21.0,U,S,Mr,High,2,0,YoungAdult,0
+3,"Widegren, Carl/Charles Peter",male,51.0,7.75,U,S,Mr,Low,1,1,Adult,0
+2,"Richards, William Rowe",male,3.0,18.75,U,S,Master,High,3,0,Child,1
+3,"Birkeland, Hans Martin Monsen",male,21.0,7.775,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Lefebre, Ida",female,21.8243661971831,25.4667,U,S,Miss,High,5,0,YoungAdult,0
+3,"Sdycoff, Todor",male,32.25215146299484,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Hart, Henry",male,32.25215146299484,6.8583,U,Q,Mr,Low,1,1,YoungAdult,0
+1,"Minahan, Daisy E",female,33.0,90.0,C,Q,Miss,VeryHigh,2,0,YoungAdult,1
+2,"Cunningham, Alfred Fleming",male,32.25215146299484,0.0,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Sundman, Johan Julian",male,44.0,7.925,U,S,Mr,Low,1,1,Adult,1
+3,"Meek, Thomas (Annie Louise Rowley)",female,36.91812865497076,8.05,U,S,Mrs,Low,1,1,Adult,0
+2,"Drew, James Vivian (Lulu Thorne Christian)",female,34.0,32.5,U,S,Mrs,High,3,0,YoungAdult,1
+2,"Silven, Lyyli Karoliina",female,18.0,13.0,U,S,Miss,Medium,3,0,Teen,1
+2,"Matthews, William John",male,30.0,13.0,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Van Impe, Catharina",female,10.0,24.15,U,S,Miss,High,3,0,Child,0
+3,"Gheorgheff, Stanio",male,32.25215146299484,7.8958,U,C,Mr,Low,1,1,YoungAdult,0
+3,"Charters, David",male,21.0,7.7333,U,Q,Mr,Low,1,1,YoungAdult,0
+3,"Zimmerman, Leo",male,29.0,7.875,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Danbom, Ernst Gilbert (Anna Sigrid Maria Brogren)",female,28.0,14.4,U,S,Mrs,Medium,3,0,YoungAdult,0
+3,"Rosblom, Viktor Richard",male,18.0,20.2125,U,S,Mr,High,3,0,Teen,0
+3,"Wiseman, Phillippe",male,32.25215146299484,7.25,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Clarke, Charles V (Ada Maria Winfield)",female,28.0,26.0,U,S,Mrs,High,2,0,YoungAdult,1
+2,"Phillips, Kate Florence (""Mrs Kate Louise Phillips Marshall"")",female,19.0,26.0,U,S,Miss,High,1,1,Teen,1
+3,"Flynn, James",male,32.25215146299484,7.75,U,Q,Mr,Low,1,1,YoungAdult,0
+3,"Pickard, Berk (Berk Trembisky)",male,32.0,8.05,E,S,Mr,Low,1,1,YoungAdult,1
+1,"Bjornstrom-Steffansson, Mauritz Hakan",male,28.0,26.55,C,S,Mr,High,1,1,YoungAdult,1
+3,"Thorneycroft, Percival (Florence Kate White)",female,36.91812865497076,16.1,U,S,Mrs,High,2,0,Adult,1
+2,"Louch, Charles Alexander (Alice Adelaide Slow)",female,42.0,26.0,U,S,Mrs,High,2,0,Adult,1
+3,"Kallio, Nikolai Erland",male,17.0,7.125,U,S,Mr,Low,1,1,Teen,0
+1,"Silvey, William Baird",male,50.0,55.9,E,S,Mr,High,2,0,Adult,0
+1,"Carter, Lucile Polk",female,14.0,120.0,B,S,Miss,VeryHigh,4,0,Teen,1
+3,"Ford, Doolina Margaret ""Daisy""",female,21.0,34.375,U,S,Miss,High,5,0,YoungAdult,0
+2,"Richards, Sidney (Emily Hocking)",female,24.0,18.75,U,S,Mrs,High,6,0,YoungAdult,1
+1,"Fortune, Mark",male,64.0,263.0,C,S,Mr,VeryHigh,6,0,Senior,0
+2,"Kvillner, Johan Henrik Johannesson",male,31.0,10.5,U,S,Mr,Medium,1,1,YoungAdult,0
+2,"Hart, Benjamin (Esther Ada Bloomfield)",female,45.0,26.25,U,S,Mrs,High,3,0,Adult,1
+3,"Hampe, Leon",male,20.0,9.5,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Petterson, Johan Emil",male,25.0,7.775,U,S,Mr,Low,2,0,YoungAdult,0
+2,"Reynaldo, Encarnacion",female,28.0,13.0,U,S,Miss,Medium,1,1,YoungAdult,1
+3,"Johannesen-Bratthammer, Bernt",male,32.25215146299484,8.1125,U,S,Mr,Medium,1,1,YoungAdult,1
+1,"Dodge, Washington",male,4.0,81.8583,A,S,Master,VeryHigh,3,0,Child,1
+2,"Mellinger, Madeleine Violet",female,13.0,19.5,U,S,Miss,High,2,0,Teen,1
+1,"Seward, Frederic Kimber",male,34.0,26.55,U,S,Mr,High,1,1,YoungAdult,1
+3,"Baclini, Marie Catherine",female,5.0,19.2583,U,C,Miss,High,4,0,Child,1
+1,"Peuchen, Arthur Godfrey",male,52.0,30.5,C,S,Rare,High,1,1,Adult,1
+2,"West, Edwy Arthur",male,36.0,27.75,U,S,Mr,High,4,0,Adult,0
+3,"Hagland, Ingvald Olai Olsen",male,32.25215146299484,19.9667,U,S,Mr,High,2,0,YoungAdult,0
+1,"Foreman, Benjamin Laventall",male,30.0,27.75,C,C,Mr,High,1,1,YoungAdult,0
+1,"Goldenberg, Samuel L",male,49.0,89.1042,C,C,Mr,VeryHigh,2,0,Adult,1
+3,"Peduzzi, Joseph",male,32.25215146299484,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Jalsevac, Ivan",male,29.0,7.8958,U,C,Mr,Low,1,1,YoungAdult,1
+1,"Millet, Francis Davis",male,65.0,26.55,E,S,Mr,High,1,1,Senior,0
+1,"Kenyon, Frederick R (Marion)",female,36.91812865497076,51.8625,D,S,Mrs,High,2,0,Adult,1
+2,"Toomey, Ellen",female,50.0,10.5,U,S,Miss,Medium,1,1,Adult,1
+3,"O'Connor, Maurice",male,32.25215146299484,7.75,U,Q,Mr,Low,1,1,YoungAdult,0
+1,"Anderson, Harry",male,48.0,26.55,E,S,Mr,High,1,1,Adult,1
+3,"Morley, William",male,34.0,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Gee, Arthur H",male,47.0,38.5,E,S,Mr,High,1,1,Adult,0
+2,"Milling, Jacob Christian",male,48.0,13.0,U,S,Mr,Medium,1,1,Adult,0
+3,"Maisner, Simon",male,32.25215146299484,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Goncalves, Manuel Estanslas",male,38.0,7.05,U,S,Mr,Low,1,1,Adult,0
+2,"Campbell, William",male,32.25215146299484,0.0,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Smart, John Montgomery",male,56.0,26.55,U,S,Mr,High,1,1,Adult,0
+3,"Scanlan, James",male,32.25215146299484,7.725,U,Q,Mr,Low,1,1,YoungAdult,0
+3,"Baclini, Helene Barbara",female,0.75,19.2583,U,C,Miss,High,4,0,Child,1
+3,"Keefe, Arthur",male,32.25215146299484,7.25,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Cacic, Luka",male,38.0,8.6625,U,S,Mr,Medium,1,1,Adult,0
+2,"West, Edwy Arthur (Ada Mary Worth)",female,33.0,27.75,U,S,Mrs,High,4,0,YoungAdult,1
+2,"Jerwan, Amin S (Marie Marthe Thuillard)",female,23.0,13.7917,D,C,Mrs,Medium,1,1,YoungAdult,1
+3,"Strandberg, Ida Sofia",female,22.0,9.8375,U,S,Miss,Medium,1,1,YoungAdult,0
+1,"Clifford, George Quincy",male,32.25215146299484,52.0,A,S,Mr,High,1,1,YoungAdult,0
+2,"Renouf, Peter Henry",male,34.0,21.0,U,S,Mr,High,2,0,YoungAdult,0
+3,"Braund, Lewis Richard",male,29.0,7.0458,U,S,Mr,Low,2,0,YoungAdult,0
+3,"Karlsson, Nils August",male,22.0,7.5208,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Hirvonen, Hildur E",female,2.0,12.2875,U,S,Miss,Medium,2,0,Child,1
+3,"Goodwin, Harold Victor",male,9.0,46.9,U,S,Master,High,8,0,Child,0
+2,"Frost, Anthony Wood ""Archie""",male,32.25215146299484,0.0,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Rouse, Richard Henry",male,50.0,8.05,U,S,Mr,Low,1,1,Adult,0
+3,"Turkula, (Hedwig)",female,63.0,9.5875,U,S,Mrs,Medium,1,1,Senior,1
+1,"Bishop, Dickinson H",male,25.0,91.0792,B,C,Mr,VeryHigh,2,0,YoungAdult,1
+3,"Lefebre, Jeannie",female,21.8243661971831,25.4667,U,S,Miss,High,5,0,YoungAdult,0
+1,"Hoyt, Frederick Maxfield (Jane Anne Forby)",female,35.0,90.0,C,S,Mrs,VeryHigh,2,0,YoungAdult,1
+1,"Kent, Edward Austin",male,58.0,29.7,B,C,Mr,High,1,1,Adult,0
+3,"Somerton, Francis William",male,30.0,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Coutts, Eden Leslie ""Neville""",male,9.0,15.9,U,S,Master,High,3,0,Child,1
+3,"Hagland, Konrad Mathias Reiersen",male,32.25215146299484,19.9667,U,S,Mr,High,2,0,YoungAdult,0
+3,"Windelov, Einar",male,21.0,7.25,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Molson, Harry Markland",male,55.0,30.5,C,S,Mr,High,1,1,Adult,0
+1,"Artagaveytia, Ramon",male,71.0,49.5042,U,C,Mr,High,1,1,Senior,0
+3,"Stanley, Edward Roland",male,21.0,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Yousseff, Gerious",male,32.25215146299484,14.4583,U,C,Mr,High,1,1,YoungAdult,0
+1,"Eustis, Elizabeth Mussey",female,54.0,78.2667,D,C,Miss,VeryHigh,2,0,Adult,1
+3,"Shellard, Frederick William",male,32.25215146299484,15.1,U,S,Mr,High,1,1,YoungAdult,0
+1,"Allison, Hudson J C (Bessie Waldo Daniels)",female,25.0,151.55,C,S,Mrs,VeryHigh,4,0,YoungAdult,0
+3,"Svensson, Olof",male,24.0,7.7958,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Calic, Petar",male,17.0,8.6625,U,S,Mr,Medium,1,1,Teen,0
+3,"Canavan, Mary",female,21.0,7.75,U,Q,Miss,Low,1,1,YoungAdult,0
+3,"O'Sullivan, Bridget Mary",female,21.8243661971831,7.6292,U,Q,Miss,Low,1,1,YoungAdult,0
+3,"Laitinen, Kristina Sofia",female,37.0,9.5875,U,S,Miss,Medium,1,1,Adult,0
+1,"Maioni, Roberta",female,16.0,86.5,B,S,Miss,VeryHigh,1,1,Teen,1
+1,"Penasco y Castellana, Victor de Satode",male,18.0,108.9,C,C,Mr,VeryHigh,2,0,Teen,0
+2,"Quick, Frederick Charles (Jane Richards)",female,33.0,26.0,U,S,Mrs,High,3,0,YoungAdult,1
+1,"Bradley, George (""George Arthur Brayton"")",male,32.25215146299484,26.55,U,S,Mr,High,1,1,YoungAdult,1
+3,"Olsen, Henry Margido",male,28.0,22.525,U,S,Mr,High,1,1,YoungAdult,0
+3,"Lang, Fang",male,26.0,56.4958,U,S,Mr,High,1,1,YoungAdult,1
+3,"Daly, Eugene Patrick",male,29.0,7.75,U,Q,Mr,Low,1,1,YoungAdult,1
+3,"Webber, James",male,32.25215146299484,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+1,"McGough, James Robert",male,36.0,26.2875,E,S,Mr,High,1,1,Adult,1
+1,"Rothschild, Martin (Elizabeth L Barrett)",female,54.0,59.4,U,C,Mrs,VeryHigh,2,0,Adult,1
+3,"Coleff, Satio",male,24.0,7.4958,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Walker, William Anderson",male,47.0,34.0208,D,S,Mr,High,1,1,Adult,0
+2,"Lemore, (Amelia Milley)",female,34.0,10.5,F,S,Mrs,Medium,1,1,YoungAdult,1
+3,"Ryan, Patrick",male,32.25215146299484,24.15,U,Q,Mr,High,1,1,YoungAdult,0
+2,"Angle, William A (Florence ""Mary"" Agnes Hughes)",female,36.0,26.0,U,S,Mrs,High,2,0,Adult,1
+3,"Pavlovic, Stefo",male,32.0,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Perreault, Anne",female,30.0,93.5,B,S,Miss,VeryHigh,1,1,YoungAdult,1
+3,"Vovk, Janko",male,22.0,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Lahoud, Sarkis",male,32.25215146299484,7.225,U,C,Mr,Low,1,1,YoungAdult,0
+1,"Hippach, Louis Albert (Ida Sophia Fischer)",female,44.0,57.9792,B,C,Mrs,VeryHigh,2,0,Adult,1
+3,"Kassem, Fared",male,32.25215146299484,7.2292,U,C,Mr,Low,1,1,YoungAdult,0
+3,"Farrell, James",male,40.5,7.75,U,Q,Mr,Low,1,1,Adult,0
+2,"Ridsdale, Lucy",female,50.0,10.5,U,S,Miss,Medium,1,1,Adult,1
+1,"Farthing, John",male,32.25215146299484,221.7792,C,S,Mr,VeryHigh,1,1,YoungAdult,0
+3,"Salonen, Johan Werner",male,39.0,7.925,U,S,Mr,Low,1,1,Adult,0
+2,"Hocking, Richard George",male,23.0,11.5,U,S,Mr,Medium,4,0,YoungAdult,0
+2,"Quick, Phyllis May",female,2.0,26.0,U,S,Miss,High,3,0,Child,1
+3,"Toufik, Nakli",male,32.25215146299484,7.2292,U,C,Mr,Low,1,1,YoungAdult,0
+3,"Elias, Joseph Jr",male,17.0,7.2292,U,C,Mr,Low,3,0,Teen,0
+3,"Peter, Catherine (Catherine Rizk)",female,36.91812865497076,22.3583,U,C,Mrs,High,3,0,Adult,1
+3,"Cacic, Marija",female,30.0,8.6625,U,S,Miss,Medium,1,1,YoungAdult,0
+2,"Hart, Eva Miriam",female,7.0,26.25,U,S,Miss,High,3,0,Child,1
+1,"Butt, Archibald Willingham",male,45.0,26.55,B,S,Rare,High,1,1,Adult,0
+1,"LeRoy, Bertha",female,30.0,106.425,U,C,Miss,VeryHigh,1,1,YoungAdult,1
+3,"Risien, Samuel Beard",male,32.25215146299484,14.5,U,S,Mr,High,1,1,YoungAdult,0
+1,"Frolicher, Hedwig Margaritha",female,22.0,49.5,B,C,Miss,High,3,0,YoungAdult,1
+1,"Crosby, Harriet R",female,36.0,71.0,B,S,Miss,VeryHigh,3,0,Adult,1
+3,"Andersson, Ingeborg Constanzia",female,9.0,31.275,U,S,Miss,High,7,0,Child,0
+3,"Andersson, Sigrid Elisabeth",female,11.0,31.275,U,S,Miss,High,7,0,Child,0
+2,"Beane, Edward",male,32.0,26.0,U,S,Mr,High,2,0,YoungAdult,1
+1,"Douglas, Walter Donald",male,50.0,106.425,C,C,Mr,VeryHigh,2,0,Adult,0
+1,"Nicholson, Arthur Ernest",male,64.0,26.0,U,S,Mr,High,1,1,Senior,0
+2,"Beane, Edward (Ethel Clarke)",female,19.0,26.0,U,S,Mrs,High,2,0,Teen,1
+2,"Padro y Manent, Julian",male,32.25215146299484,13.8625,U,C,Mr,Medium,1,1,YoungAdult,1
+3,"Goldsmith, Frank John",male,33.0,20.525,U,S,Mr,High,3,0,YoungAdult,0
+2,"Davies, John Morgan Jr",male,8.0,36.75,U,S,Master,High,3,0,Child,1
+1,"Thayer, John Borland Jr",male,17.0,110.8833,C,C,Mr,VeryHigh,3,0,Teen,1
+2,"Sharp, Percival James R",male,27.0,26.0,U,S,Mr,High,1,1,YoungAdult,0
+3,"O'Brien, Timothy",male,32.25215146299484,7.8292,U,Q,Mr,Low,1,1,YoungAdult,0
+3,"Leeni, Fahim (""Philip Zenni"")",male,22.0,7.225,U,C,Mr,Low,1,1,YoungAdult,1
+3,"Ohman, Velin",female,22.0,7.775,U,S,Miss,Low,1,1,YoungAdult,1
+1,"Wright, George",male,62.0,26.55,U,S,Mr,High,1,1,Senior,0
+1,"Duff Gordon, (Lucille Christiana Sutherland) (""Mrs Morgan"")",female,48.0,39.6,A,C,Royal,High,2,0,Adult,1
+1,"Robbins, Victor",male,32.25215146299484,227.525,U,C,Mr,VeryHigh,1,1,YoungAdult,0
+1,"Taussig, Emil (Tillie Mandelbaum)",female,39.0,79.65,E,S,Mrs,VeryHigh,3,0,Adult,1
+3,"de Messemaeker, Guillaume Joseph (Emma)",female,36.0,17.4,U,S,Mrs,High,2,0,Adult,1
+3,"Morrow, Thomas Rowan",male,32.25215146299484,7.75,U,Q,Mr,Low,1,1,YoungAdult,0
+3,"Sivic, Husein",male,40.0,7.8958,U,S,Mr,Low,1,1,Adult,0
+2,"Norman, Robert Douglas",male,28.0,13.5,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Simmons, John",male,32.25215146299484,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Meanwell, (Marion Ogden)",female,21.8243661971831,8.05,U,S,Miss,Low,1,1,YoungAdult,0
+3,"Davies, Alfred J",male,24.0,24.15,U,S,Mr,High,3,0,YoungAdult,0
+3,"Stoytcheff, Ilia",male,19.0,7.8958,U,S,Mr,Low,1,1,Teen,0
+3,"Palsson, Nils (Alma Cornelia Berglund)",female,29.0,21.075,U,S,Mrs,High,5,0,YoungAdult,0
+3,"Doharr, Tannous",male,32.25215146299484,7.2292,U,C,Mr,Low,1,1,YoungAdult,0
+3,"Jonsson, Carl",male,32.0,7.8542,U,S,Mr,Low,1,1,YoungAdult,1
+2,"Harris, George",male,62.0,10.5,U,S,Mr,Medium,1,1,Senior,1
+1,"Appleton, Edward Dale (Charlotte Lamson)",female,53.0,51.4792,C,S,Mrs,High,3,0,Adult,1
+1,"Flynn, John Irwin (""Irving"")",male,36.0,26.3875,E,S,Mr,High,1,1,Adult,1
+3,"Kelly, Mary",female,21.8243661971831,7.75,U,Q,Miss,Low,1,1,YoungAdult,1
+3,"Rush, Alfred George John",male,16.0,8.05,U,S,Mr,Low,1,1,Teen,0
+3,"Patchett, George",male,19.0,14.5,U,S,Mr,High,1,1,Teen,0
+2,"Garside, Ethel",female,34.0,13.0,U,S,Miss,Medium,1,1,YoungAdult,1
+1,"Silvey, William Baird (Alice Munger)",female,39.0,55.9,E,S,Mrs,High,2,0,Adult,1
+3,"Caram, Joseph (Maria Elias)",female,36.91812865497076,14.4583,U,C,Mrs,High,2,0,Adult,0
+3,"Jussila, Eiriik",male,32.0,7.925,U,S,Mr,Low,1,1,YoungAdult,1
+2,"Christy, Julie Rachel",female,25.0,30.0,U,S,Miss,High,3,0,YoungAdult,1
+1,"Thayer, John Borland (Marian Longstreth Morris)",female,39.0,110.8833,C,C,Mrs,VeryHigh,3,0,Adult,1
+2,"Downton, William James",male,54.0,26.0,U,S,Mr,High,1,1,Adult,0
+1,"Ross, John Hugo",male,36.0,40.125,A,C,Mr,High,1,1,Adult,0
+3,"Paulner, Uscher",male,32.25215146299484,8.7125,U,C,Mr,Medium,1,1,YoungAdult,0
+1,"Taussig, Ruth",female,18.0,79.65,E,S,Miss,VeryHigh,3,0,Teen,1
+2,"Jarvis, John Denzil",male,47.0,15.0,U,S,Mr,High,1,1,Adult,0
+1,"Frolicher-Stehli, Maxmillian",male,60.0,79.2,B,C,Mr,VeryHigh,3,0,Senior,1
+3,"Gilinski, Eliezer",male,22.0,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Murdlin, Joseph",male,32.25215146299484,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Rintamaki, Matti",male,35.0,7.125,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Stephenson, Walter Bertram (Martha Eustis)",female,52.0,78.2667,D,C,Mrs,VeryHigh,2,0,Adult,1
+3,"Elsbury, William James",male,47.0,7.25,U,S,Mr,Low,1,1,Adult,0
+3,"Bourke, Mary",female,21.8243661971831,7.75,U,Q,Miss,Low,3,0,YoungAdult,0
+2,"Chapman, John Henry",male,37.0,26.0,U,S,Mr,High,2,0,Adult,0
+3,"Van Impe, Jean Baptiste",male,36.0,24.15,U,S,Mr,High,3,0,Adult,0
+2,"Leitch, Jessie Wills",female,21.8243661971831,33.0,U,S,Miss,High,1,1,YoungAdult,1
+3,"Johnson, Alfred",male,49.0,0.0,U,S,Mr,Low,1,1,Adult,0
+3,"Boulos, Hanna",male,32.25215146299484,7.225,U,C,Mr,Low,1,1,YoungAdult,0
+1,"Duff Gordon, Cosmo Edmund (""Mr Morgan"")",male,49.0,56.9292,A,C,Royal,High,2,0,Adult,1
+2,"Jacobsohn, Sidney Samuel (Amy Frances Christy)",female,24.0,27.0,U,S,Mrs,High,4,0,YoungAdult,1
+3,"Slabenoff, Petco",male,32.25215146299484,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Harrington, Charles H",male,32.25215146299484,42.4,U,S,Mr,High,1,1,YoungAdult,0
+3,"Torber, Ernst William",male,44.0,8.05,U,S,Mr,Low,1,1,Adult,0
+1,"Homer, Harry (""Mr E Haven"")",male,35.0,26.55,U,C,Mr,High,1,1,YoungAdult,1
+3,"Lindell, Edvard Bengtsson",male,36.0,15.55,U,S,Mr,High,2,0,Adult,0
+3,"Karaic, Milan",male,30.0,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Daniel, Robert Williams",male,27.0,30.5,U,S,Mr,High,1,1,YoungAdult,1
+2,"Laroche, Joseph (Juliette Marie Louise Lafargue)",female,22.0,41.5792,U,C,Mrs,High,4,0,YoungAdult,1
+1,"Shutes, Elizabeth W",female,40.0,153.4625,C,S,Miss,VeryHigh,1,1,Adult,1
+3,"Andersson, Anders Johan (Alfrida Konstantia Brogren)",female,39.0,31.275,U,S,Mrs,High,7,0,Adult,0
+3,"Jardin, Jose Neto",male,32.25215146299484,7.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Murphy, Margaret Jane",female,21.8243661971831,15.5,U,Q,Miss,High,2,0,YoungAdult,1
+3,"Horgan, John",male,32.25215146299484,7.75,U,Q,Mr,Low,1,1,YoungAdult,0
+3,"Brocklebank, William Alfred",male,35.0,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Herman, Alice",female,24.0,65.0,U,S,Miss,VeryHigh,4,0,YoungAdult,1
+3,"Danbom, Ernst Gilbert",male,34.0,14.4,U,S,Mr,Medium,3,0,YoungAdult,0
+3,"Lobb, William Arthur (Cordelia K Stanlick)",female,26.0,16.1,U,S,Mrs,High,2,0,YoungAdult,0
+2,"Becker, Marion Louise",female,4.0,39.0,F,S,Miss,High,4,0,Child,1
+2,"Gavey, Lawrence",male,26.0,10.5,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Yasbeck, Antoni",male,27.0,14.4542,U,C,Mr,Medium,2,0,YoungAdult,0
+1,"Kimball, Edwin Nelson Jr",male,42.0,52.5542,D,S,Mr,High,2,0,Adult,1
+3,"Nakid, Sahid",male,20.0,15.7417,U,C,Mr,High,3,0,YoungAdult,1
+3,"Hansen, Henry Damsgaard",male,21.0,7.8542,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Bowen, David John ""Dai""",male,21.0,16.1,U,S,Mr,High,1,1,YoungAdult,0
+1,"Sutton, Frederick",male,61.0,32.3208,D,S,Mr,High,1,1,Senior,0
+2,"Kirkland, Charles Leonard",male,57.0,12.35,U,Q,Rare,Medium,1,1,Adult,0
+1,"Longley, Gretchen Fiske",female,21.0,77.9583,D,S,Miss,VeryHigh,1,1,YoungAdult,1
+3,"Bostandyeff, Guentcho",male,26.0,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+3,"O'Connell, Patrick D",male,32.25215146299484,7.7333,U,Q,Mr,Low,1,1,YoungAdult,0
+1,"Barkworth, Algernon Henry Wilson",male,80.0,30.0,A,S,Mr,High,1,1,Senior,1
+3,"Lundahl, Johan Svensson",male,51.0,7.0542,U,S,Mr,Low,1,1,Adult,0
+1,"Stahelin-Maeglin, Max",male,32.0,30.5,B,C,Rare,High,1,1,YoungAdult,1
+1,"Parr, William Henry Marsh",male,32.25215146299484,0.0,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Skoog, Mabel",female,9.0,27.9,U,S,Miss,High,6,0,Child,0
+2,"Davis, Mary",female,28.0,13.0,U,S,Miss,Medium,1,1,YoungAdult,1
+3,"Leinonen, Antti Gustaf",male,32.0,7.925,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Collyer, Harvey",male,31.0,26.25,U,S,Mr,High,3,0,YoungAdult,0
+3,"Panula, Juha (Maria Emilia Ojala)",female,41.0,39.6875,U,S,Mrs,High,6,0,Adult,0
+3,"Thorneycroft, Percival",male,32.25215146299484,16.1,U,S,Mr,High,2,0,YoungAdult,0
+3,"Jensen, Hans Peder",male,20.0,7.8542,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Sagesser, Emma",female,24.0,69.3,B,C,Miss,VeryHigh,1,1,YoungAdult,1
+3,"Skoog, Margit Elizabeth",female,2.0,27.9,U,S,Miss,High,6,0,Child,0
+3,"Foo, Choong",male,32.25215146299484,56.4958,U,S,Mr,High,1,1,YoungAdult,1
+3,"Baclini, Eugenie",female,0.75,19.2583,U,C,Miss,High,4,0,Child,1
+1,"Harper, Henry Sleeper",male,48.0,76.7292,D,C,Mr,VeryHigh,2,0,Adult,1
+3,"Cor, Liudevit",male,19.0,7.8958,U,S,Mr,Low,1,1,Teen,0
+1,"Simonius-Blumer, Oberst Alfons",male,56.0,35.5,A,C,Rare,High,1,1,Adult,1
+3,"Willey, Edward",male,32.25215146299484,7.55,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Stanley, Amy Zillah Elsie",female,23.0,7.55,U,S,Miss,Low,1,1,YoungAdult,1
+3,"Mitkoff, Mito",male,32.25215146299484,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Doling, Elsie",female,18.0,23.0,U,S,Miss,High,2,0,Teen,1
+3,"Kalvik, Johannes Halvorsen",male,21.0,8.4333,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"O'Leary, Hanora ""Norah""",female,21.8243661971831,7.8292,U,Q,Miss,Low,1,1,YoungAdult,1
+3,"Hegarty, Hanora ""Nora""",female,18.0,6.75,U,Q,Miss,Low,1,1,Teen,0
+2,"Hickman, Leonard Mark",male,24.0,73.5,U,S,Mr,VeryHigh,3,0,YoungAdult,0
+3,"Radeff, Alexander",male,32.25215146299484,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Bourke, John (Catherine)",female,32.0,15.5,U,Q,Mrs,High,3,0,YoungAdult,0
+2,"Eitemiller, George Floyd",male,23.0,13.0,U,S,Mr,Medium,1,1,YoungAdult,0
+1,"Newell, Arthur Webster",male,58.0,113.275,D,C,Mr,VeryHigh,3,0,Adult,0
+1,"Frauenthal, Henry William",male,50.0,133.65,U,S,Rare,VeryHigh,3,0,Adult,1
+3,"Badt, Mohamed",male,40.0,7.225,U,C,Mr,Low,1,1,Adult,0
+1,"Colley, Edward Pomeroy",male,47.0,25.5875,E,S,Mr,High,1,1,Adult,0
+3,"Coleff, Peju",male,36.0,7.4958,U,S,Mr,Low,1,1,Adult,0
+3,"Lindqvist, Eino William",male,20.0,7.925,U,S,Mr,Low,2,0,YoungAdult,1
+2,"Hickman, Lewis",male,32.0,73.5,U,S,Mr,VeryHigh,3,0,YoungAdult,0
+2,"Butler, Reginald Fenton",male,25.0,13.0,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Rommetvedt, Knud Paust",male,32.25215146299484,7.775,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Cook, Jacob",male,43.0,8.05,U,S,Mr,Low,1,1,Adult,0
+1,"Taylor, Elmer Zebley (Juliet Cummins Wright)",female,36.91812865497076,52.0,C,S,Mrs,High,2,0,Adult,1
+2,"Brown, Thomas William Solomon (Elizabeth Catherine Ford)",female,40.0,39.0,U,S,Mrs,High,3,0,Adult,1
+1,"Davidson, Thornton",male,31.0,52.0,B,S,Mr,High,2,0,YoungAdult,0
+2,"Mitchell, Henry Michael",male,70.0,10.5,U,S,Mr,Medium,1,1,Senior,0
+2,"Wilhelms, Charles",male,31.0,13.0,U,S,Mr,Medium,1,1,YoungAdult,1
+2,"Watson, Ennis Hastings",male,32.25215146299484,0.0,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Edvardsson, Gustaf Hjalmar",male,18.0,7.775,U,S,Mr,Low,1,1,Teen,0
+3,"Sawyer, Frederick Charles",male,24.5,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Turja, Anna Sofia",female,18.0,9.8417,U,S,Miss,Medium,1,1,Teen,1
+3,"Goodwin, Frederick (Augusta Tyler)",female,43.0,46.9,U,S,Mrs,High,8,0,Adult,0
+1,"Cardeza, Thomas Drake Martinez",male,36.0,512.3292,B,C,Mr,VeryHigh,2,0,Adult,1
+3,"Peters, Katie",female,21.8243661971831,8.1375,U,Q,Miss,Medium,1,1,YoungAdult,0
+1,"Hassab, Hammad",male,27.0,76.7292,D,C,Mr,VeryHigh,1,1,YoungAdult,1
+3,"Olsvigen, Thor Anderson",male,20.0,9.225,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Goodwin, Charles Edward",male,14.0,46.9,U,S,Mr,High,8,0,Teen,0
+2,"Brown, Thomas William Solomon",male,60.0,39.0,U,S,Mr,High,3,0,Senior,0
+2,"Laroche, Joseph Philippe Lemercier",male,25.0,41.5792,U,C,Mr,High,4,0,YoungAdult,0
+3,"Panula, Jaako Arnold",male,14.0,39.6875,U,S,Mr,High,6,0,Teen,0
+3,"Dakic, Branko",male,19.0,10.1708,U,S,Mr,Medium,1,1,Teen,0
+3,"Fischer, Eberhard Thelander",male,18.0,7.7958,U,S,Mr,Low,1,1,Teen,0
+1,"Madill, Georgette Alexandra",female,15.0,211.3375,B,S,Miss,VeryHigh,2,0,Teen,1
+1,"Dick, Albert Adrian",male,31.0,57.0,B,S,Mr,VeryHigh,2,0,YoungAdult,1
+3,"Karun, Manca",female,4.0,13.4167,U,C,Miss,Medium,2,0,Child,1
+3,"Lam, Ali",male,32.25215146299484,56.4958,U,S,Mr,High,1,1,YoungAdult,1
+3,"Saad, Khalil",male,25.0,7.225,U,C,Mr,Low,1,1,YoungAdult,0
+1,"Weir, John",male,60.0,26.55,U,S,Rare,High,1,1,Senior,0
+2,"Chapman, Charles Henry",male,52.0,13.5,U,S,Mr,Medium,1,1,Adult,0
+3,"Kelly, James",male,44.0,8.05,U,S,Mr,Low,1,1,Adult,0
+3,"Mullens, Katherine ""Katie""",female,21.8243661971831,7.7333,U,Q,Miss,Low,1,1,YoungAdult,1
+1,"Thayer, John Borland",male,49.0,110.8833,C,C,Mr,VeryHigh,3,0,Adult,0
+3,"Humblen, Adolf Mathias Nicolai Olsen",male,42.0,7.65,F,S,Mr,Low,1,1,Adult,0
+1,"Astor, John Jacob (Madeleine Talmadge Force)",female,18.0,227.525,C,C,Mrs,VeryHigh,2,0,Teen,1
+1,"Silverthorne, Spencer Victor",male,35.0,26.2875,E,S,Mr,High,1,1,YoungAdult,1
+3,"Barbara, Saiide",female,18.0,14.4542,U,C,Miss,Medium,2,0,Teen,0
+3,"Gallagher, Martin",male,25.0,7.7417,U,Q,Mr,Low,1,1,YoungAdult,0
+3,"Hansen, Henrik Juul",male,26.0,7.8542,U,S,Mr,Low,2,0,YoungAdult,0
+2,"Morley, Henry Samuel (""Mr Henry Marshall"")",male,39.0,26.0,U,S,Mr,High,1,1,Adult,0
+2,"Kelly, Florence ""Fannie""",female,45.0,13.5,U,S,Mrs,Medium,1,1,Adult,1
+1,"Calderhead, Edward Pennington",male,42.0,26.2875,E,S,Mr,High,1,1,Adult,1
+1,"Cleaver, Alice",female,22.0,151.55,U,S,Miss,VeryHigh,1,1,YoungAdult,1
+3,"Moubarek, Halim Gonios (""William George"")",male,5.482641509433963,15.2458,U,C,Master,High,3,0,Child,1
+1,"Mayne, Berthe Antonine (""Mrs de Villiers"")",female,24.0,49.5042,C,C,Miss,High,1,1,YoungAdult,1
+1,"Klaber, Herman",male,32.25215146299484,26.55,C,S,Mr,High,1,1,YoungAdult,0
+1,"Taylor, Elmer Zebley",male,48.0,52.0,C,S,Mr,High,2,0,Adult,1
+3,"Larsson, August Viktor",male,29.0,9.4833,U,S,Mr,Medium,1,1,YoungAdult,0
+2,"Greenberg, Samuel",male,52.0,13.0,U,S,Mr,Medium,1,1,Adult,0
+3,"Soholt, Peter Andreas Lauritz Andersen",male,19.0,7.65,F,S,Mr,Low,1,1,Teen,0
+1,"Endres, Caroline Louise",female,38.0,227.525,C,C,Miss,VeryHigh,1,1,Adult,1
+2,"Troutt, Edwina Celia ""Winnie""",female,27.0,10.5,E,S,Miss,Medium,1,1,YoungAdult,1
+3,"McEvoy, Michael",male,32.25215146299484,15.5,U,Q,Mr,High,1,1,YoungAdult,0
+3,"Johnson, Malkolm Joackim",male,33.0,7.775,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Harper, Annie Jessie ""Nina""",female,6.0,33.0,U,S,Miss,High,2,0,Child,1
+3,"Jensen, Svend Lauritz",male,17.0,7.0542,U,S,Mr,Low,2,0,Teen,0
+2,"Gillespie, William Henry",male,34.0,13.0,U,S,Mr,Medium,1,1,YoungAdult,0
+2,"Hodges, Henry Price",male,50.0,13.0,U,S,Mr,Medium,1,1,Adult,0
+1,"Chambers, Norman Campbell",male,27.0,53.1,E,S,Mr,High,2,0,YoungAdult,1
+3,"Oreskovic, Luka",male,20.0,8.6625,U,S,Mr,Medium,1,1,YoungAdult,0
+2,"Renouf, Peter Henry (Lillian Jefferys)",female,30.0,21.0,U,S,Mrs,High,4,0,YoungAdult,1
+3,"Mannion, Margareth",female,21.8243661971831,7.7375,U,Q,Miss,Low,1,1,YoungAdult,1
+2,"Bryhl, Kurt Arnold Gottfrid",male,25.0,26.0,U,S,Mr,High,2,0,YoungAdult,0
+3,"Ilmakangas, Pieta Sofia",female,25.0,7.925,U,S,Miss,Low,2,0,YoungAdult,0
+1,"Allen, Elisabeth Walton",female,29.0,211.3375,B,S,Miss,VeryHigh,1,1,YoungAdult,1
+3,"Hassan, Houssein G N",male,11.0,18.7875,U,C,Mr,High,1,1,Child,0
+2,"Knight, Robert J",male,32.25215146299484,0.0,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Berriman, William John",male,23.0,13.0,U,S,Mr,Medium,1,1,YoungAdult,0
+2,"Troupiansky, Moses Aaron",male,23.0,13.0,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Williams, Leslie",male,28.5,16.1,U,S,Mr,High,1,1,YoungAdult,0
+3,"Ford, Edward (Margaret Ann Watson)",female,48.0,34.375,U,S,Mrs,High,5,0,Adult,0
+1,"Lesurer, Gustave J",male,35.0,512.3292,B,C,Mr,VeryHigh,1,1,YoungAdult,1
+3,"Ivanoff, Kanio",male,32.25215146299484,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Nankoff, Minko",male,32.25215146299484,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Hawksford, Walter James",male,32.25215146299484,30.0,D,S,Mr,High,1,1,YoungAdult,1
+1,"Cavendish, Tyrell William",male,36.0,78.85,C,S,Mr,VeryHigh,2,0,Adult,0
+1,"Ryerson, Susan Parker ""Suzette""",female,21.0,262.375,B,C,Miss,VeryHigh,5,0,YoungAdult,1
+3,"McNamee, Neal",male,24.0,16.1,U,S,Mr,High,2,0,YoungAdult,0
+3,"Stranden, Juho",male,31.0,7.925,U,S,Mr,Low,1,1,YoungAdult,1
+1,"Crosby, Edward Gifford",male,70.0,71.0,B,S,Rare,VeryHigh,3,0,Senior,0
+3,"Abbott, Rossmore Edward",male,16.0,20.25,U,S,Mr,High,3,0,Teen,0
+2,"Sinkkonen, Anna",female,30.0,13.0,U,S,Miss,Medium,1,1,YoungAdult,1
+1,"Marvin, Daniel Warner",male,19.0,53.1,D,S,Mr,High,2,0,Teen,0
+3,"Connaghton, Michael",male,31.0,7.75,U,Q,Mr,Low,1,1,YoungAdult,0
+2,"Wells, Joan",female,4.0,23.0,U,S,Miss,High,3,0,Child,1
+3,"Moor, Meier",male,6.0,12.475,E,S,Master,Medium,2,0,Child,1
+3,"Vande Velde, Johannes Joseph",male,33.0,9.5,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Jonkoff, Lalio",male,23.0,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Herman, Samuel (Jane Laver)",female,48.0,65.0,U,S,Mrs,VeryHigh,4,0,Adult,1
+2,"Hamalainen, Viljo",male,0.67,14.5,U,S,Master,High,3,0,Child,1
+3,"Carlsson, August Sigfrid",male,28.0,7.7958,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Bailey, Percy Andrew",male,18.0,11.5,U,S,Mr,Medium,1,1,Teen,0
+3,"Theobald, Thomas Leonard",male,34.0,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Rothes, of (Lucy Noel Martha Dyer-Edwards)",female,33.0,86.5,B,S,Royal,VeryHigh,1,1,YoungAdult,1
+3,"Garfirth, John",male,32.25215146299484,14.5,U,S,Mr,High,1,1,YoungAdult,0
+3,"Nirva, Iisakki Antino Aijo",male,41.0,7.125,U,S,Mr,Low,1,1,Adult,0
+3,"Barah, Hanna Assi",male,20.0,7.2292,U,C,Mr,Low,1,1,YoungAdult,1
+1,"Carter, William Ernest (Lucile Polk)",female,36.0,120.0,B,S,Mrs,VeryHigh,4,0,Adult,1
+3,"Eklund, Hans Linus",male,16.0,7.775,U,S,Mr,Low,1,1,Teen,0
+1,"Hogeboom, John C (Anna Andrews)",female,51.0,77.9583,D,S,Mrs,VeryHigh,2,0,Adult,1
+1,"Brewe, Arthur Jackson",male,46.27272727272727,39.6,U,C,Rare,High,1,1,Adult,0
+3,"Mangan, Mary",female,30.5,7.75,U,Q,Miss,Low,1,1,YoungAdult,0
+3,"Moran, Daniel J",male,32.25215146299484,24.15,U,Q,Mr,High,2,0,YoungAdult,0
+3,"Gronnestad, Daniel Danielsen",male,32.0,8.3625,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Lievens, Rene Aime",male,24.0,9.5,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Jensen, Niels Peder",male,48.0,7.8542,U,S,Mr,Low,1,1,Adult,0
+2,"Mack, (Mary)",female,57.0,10.5,E,S,Mrs,Medium,1,1,Adult,0
+3,"Elias, Dibo",male,32.25215146299484,7.225,U,C,Mr,Low,1,1,YoungAdult,0
+2,"Hocking, Elizabeth (Eliza Needs)",female,54.0,23.0,U,S,Mrs,High,5,0,Adult,1
+3,"Myhrman, Pehr Fabian Oliver Malkolm",male,18.0,7.75,U,S,Mr,Low,1,1,Teen,0
+3,"Tobin, Roger",male,32.25215146299484,7.75,F,Q,Mr,Low,1,1,YoungAdult,0
+3,"Emanuel, Virginia Ethel",female,5.0,12.475,U,S,Miss,Medium,1,1,Child,1
+3,"Kilgannon, Thomas J",male,32.25215146299484,7.7375,U,Q,Mr,Low,1,1,YoungAdult,0
+1,"Robert, Edward Scott (Elisabeth Walton McMillan)",female,43.0,211.3375,B,S,Mrs,VeryHigh,2,0,Adult,1
+3,"Ayoub, Banoura",female,13.0,7.2292,U,C,Miss,Low,1,1,Teen,1
+1,"Dick, Albert Adrian (Vera Gillespie)",female,17.0,57.0,B,S,Mrs,VeryHigh,2,0,Teen,1
+1,"Long, Milton Clyde",male,29.0,30.0,D,S,Mr,High,1,1,YoungAdult,0
+3,"Johnston, Andrew G",male,32.25215146299484,23.45,U,S,Mr,High,4,0,YoungAdult,0
+3,"Ali, William",male,25.0,7.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Harmer, Abraham (David Lishin)",male,25.0,7.25,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Sjoblom, Anna Sofia",female,18.0,7.4958,U,S,Miss,Low,1,1,Teen,1
+3,"Rice, George Hugh",male,8.0,29.125,U,Q,Master,High,6,0,Child,0
+3,"Dean, Bertram Vere",male,1.0,20.575,U,S,Master,High,4,0,Child,1
+1,"Guggenheim, Benjamin",male,46.0,79.2,B,C,Mr,VeryHigh,1,1,Adult,0
+3,"Keane, Andrew ""Andy""",male,32.25215146299484,7.75,U,Q,Mr,Low,1,1,YoungAdult,0
+2,"Gaskell, Alfred",male,16.0,26.0,U,S,Mr,High,1,1,Teen,0
+3,"Sage, Stella Anna",female,21.8243661971831,69.55,U,S,Miss,VeryHigh,11,0,YoungAdult,0
+1,"Hoyt, William Fisher",male,32.25215146299484,30.6958,U,C,Mr,High,1,1,YoungAdult,0
+3,"Dantcheff, Ristiu",male,25.0,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Otter, Richard",male,39.0,13.0,U,S,Mr,Medium,1,1,Adult,0
+1,"Leader, Alice (Farnham)",female,49.0,25.9292,D,S,Rare,High,1,1,Adult,1
+3,"Osman, Mara",female,31.0,8.6833,U,S,Mrs,Medium,1,1,YoungAdult,1
+3,"Ibrahim Shawah, Yousseff",male,30.0,7.2292,U,C,Mr,Low,1,1,YoungAdult,0
+3,"Van Impe, Jean Baptiste (Rosalie Paula Govaert)",female,30.0,24.15,U,S,Mrs,High,3,0,YoungAdult,0
+2,"Ponesell, Martin",male,34.0,13.0,U,S,Mr,Medium,1,1,YoungAdult,0
+2,"Collyer, Harvey (Charlotte Annie Tate)",female,31.0,26.25,U,S,Mrs,High,3,0,YoungAdult,1
+1,"Carter, William Thornton II",male,11.0,120.0,B,S,Master,VeryHigh,4,0,Child,1
+3,"Thomas, Assad Alexander",male,0.42,8.5167,U,C,Master,Medium,2,0,Child,1
+3,"Hedman, Oskar Arvid",male,27.0,6.975,U,S,Mr,Low,1,1,YoungAdult,1
+3,"Johansson, Karl Johan",male,31.0,7.775,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Andrews, Thomas Jr",male,39.0,0.0,A,S,Mr,Low,1,1,Adult,0
+3,"Pettersson, Ellen Natalia",female,18.0,7.775,U,S,Miss,Low,1,1,Teen,0
+2,"Meyer, August",male,39.0,13.0,U,S,Mr,Medium,1,1,Adult,0
+1,"Chambers, Norman Campbell (Bertha Griggs)",female,33.0,53.1,E,S,Mrs,High,2,0,YoungAdult,1
+3,"Alexander, William",male,26.0,7.8875,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Lester, James",male,39.0,24.15,U,S,Mr,High,1,1,Adult,0
+2,"Slemen, Richard James",male,35.0,10.5,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Andersson, Ebba Iris Alfrida",female,6.0,31.275,U,S,Miss,High,7,0,Child,0
+3,"Tomlin, Ernest Portage",male,30.5,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Fry, Richard",male,32.25215146299484,0.0,B,S,Mr,Low,1,1,YoungAdult,0
+3,"Heininen, Wendla Maria",female,23.0,7.925,U,S,Miss,Low,1,1,YoungAdult,0
+2,"Mallet, Albert",male,31.0,37.0042,U,C,Mr,High,3,0,YoungAdult,0
+3,"Holm, John Fredrik Alexander",male,43.0,6.45,U,S,Mr,Low,1,1,Adult,0
+3,"Skoog, Karl Thorsten",male,10.0,27.9,U,S,Master,High,6,0,Child,0
+1,"Hays, Charles Melville (Clara Jennings Gregg)",female,52.0,93.5,B,S,Mrs,VeryHigh,3,0,Adult,1
+3,"Lulic, Nikola",male,27.0,8.6625,U,S,Mr,Medium,1,1,YoungAdult,1
+1,"Reuchlin, John George",male,38.0,0.0,U,S,Royal,Low,1,1,Adult,0
+3,"Moor, (Beila)",female,27.0,12.475,E,S,Mrs,Medium,2,0,YoungAdult,1
+3,"Panula, Urho Abraham",male,2.0,39.6875,U,S,Master,High,6,0,Child,0
+3,"Flynn, John",male,32.25215146299484,6.95,U,Q,Mr,Low,1,1,YoungAdult,0
+3,"Lam, Len",male,32.25215146299484,56.4958,U,S,Mr,High,1,1,YoungAdult,0
+2,"Mallet, Andre",male,1.0,37.0042,U,C,Master,High,3,0,Child,1
+3,"McCormack, Thomas Joseph",male,32.25215146299484,7.75,U,Q,Mr,Low,1,1,YoungAdult,1
+1,"Stone, George Nelson (Martha Evelyn)",female,62.0,80.0,B,S,Mrs,VeryHigh,1,1,Senior,1
+3,"Yasbeck, Antoni (Selini Alexander)",female,15.0,14.4542,U,C,Mrs,Medium,2,0,Teen,1
+2,"Richards, George Sibley",male,0.83,18.75,U,S,Master,High,3,0,Child,1
+3,"Saad, Amin",male,32.25215146299484,7.2292,U,C,Mr,Low,1,1,YoungAdult,0
+3,"Augustsson, Albert",male,23.0,7.8542,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Allum, Owen George",male,18.0,8.3,U,S,Mr,Medium,1,1,Teen,0
+1,"Compton, Sara Rebecca",female,39.0,83.1583,E,C,Miss,VeryHigh,3,0,Adult,1
+3,"Pasic, Jakob",male,21.0,8.6625,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Sirota, Maurice",male,32.25215146299484,8.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Chip, Chang",male,32.0,56.4958,U,S,Mr,High,1,1,YoungAdult,1
+1,"Marechal, Pierre",male,32.25215146299484,29.7,C,C,Mr,High,1,1,YoungAdult,1
+3,"Alhomaki, Ilmari Rudolf",male,20.0,7.925,U,S,Mr,Low,1,1,YoungAdult,0
+2,"Mudd, Thomas Charles",male,16.0,10.5,U,S,Mr,Medium,1,1,Teen,0
+1,"Serepeca, Augusta",female,30.0,31.0,U,C,Miss,High,1,1,YoungAdult,1
+3,"Lemberopolous, Peter L",male,34.5,6.4375,U,C,Mr,Low,1,1,YoungAdult,0
+3,"Culumovic, Jeso",male,17.0,8.6625,U,S,Mr,Medium,1,1,Teen,0
+3,"Abbing, Anthony",male,42.0,7.55,U,S,Mr,Low,1,1,Adult,0
+3,"Sage, Douglas Bullen",male,32.25215146299484,69.55,U,S,Mr,VeryHigh,11,0,YoungAdult,0
+3,"Markoff, Marin",male,35.0,7.8958,U,C,Mr,Low,1,1,YoungAdult,0
+2,"Harper, John",male,28.0,33.0,U,S,Rare,High,2,0,YoungAdult,0
+1,"Goldenberg, Samuel L (Edwiga Grabowska)",female,36.91812865497076,89.1042,C,C,Mrs,VeryHigh,2,0,Adult,1
+3,"Andersson, Sigvard Harald Elias",male,4.0,31.275,U,S,Master,High,7,0,Child,0
+3,"Svensson, Johan",male,74.0,7.775,U,S,Mr,Low,1,1,Senior,0
+3,"Boulos, Nourelain",female,9.0,15.2458,U,C,Miss,High,3,0,Child,0
+1,"Lines, Mary Conover",female,16.0,39.4,D,S,Miss,High,2,0,Teen,1
+2,"Carter, Ernest Courtenay (Lilian Hughes)",female,44.0,26.0,U,S,Mrs,High,2,0,Adult,0
+3,"Aks, Sam (Leah Rosen)",female,18.0,9.35,U,S,Mrs,Medium,2,0,Teen,1
+1,"Wick, George Dennick (Mary Hitchcock)",female,45.0,164.8667,U,S,Mrs,VeryHigh,3,0,Adult,1
+1,"Daly, Peter Denis ",male,51.0,26.55,E,S,Mr,High,1,1,Adult,1
+3,"Baclini, Solomon (Latifa Qurban)",female,24.0,19.2583,U,C,Mrs,High,4,0,YoungAdult,1
+3,"Razi, Raihed",male,32.25215146299484,7.2292,U,C,Mr,Low,1,1,YoungAdult,0
+3,"Hansen, Claus Peter",male,41.0,14.1083,U,S,Mr,Medium,3,0,Adult,0
+2,"Giles, Frederick Edward",male,21.0,11.5,U,S,Mr,Medium,2,0,YoungAdult,0
+1,"Swift, Frederick Joel (Margaret Welles Barron)",female,48.0,25.9292,D,S,Mrs,High,1,1,Adult,1
+3,"Sage, Dorothy Edith ""Dolly""",female,21.8243661971831,69.55,U,S,Miss,VeryHigh,11,0,YoungAdult,0
+2,"Gill, John William",male,24.0,13.0,U,S,Mr,Medium,1,1,YoungAdult,0
+2,"Bystrom, (Karolina)",female,42.0,13.0,U,S,Mrs,Medium,1,1,Adult,1
+2,"Duran y More, Asuncion",female,27.0,13.8583,U,C,Miss,Medium,2,0,YoungAdult,1
+1,"Roebling, Washington Augustus II",male,31.0,50.4958,A,S,Mr,High,1,1,YoungAdult,0
+3,"van Melkebeke, Philemon",male,32.25215146299484,9.5,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Johnson, Harold Theodor",male,4.0,11.1333,U,S,Master,Medium,3,0,Child,1
+3,"Balkic, Cerin",male,26.0,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Beckwith, Richard Leonard (Sallie Monypeny)",female,47.0,52.5542,D,S,Mrs,High,3,0,Adult,1
+1,"Carlsson, Frans Olof",male,33.0,5.0,B,S,Mr,Low,1,1,YoungAdult,0
+3,"Vander Cruyssen, Victor",male,47.0,9.0,U,S,Mr,Medium,1,1,Adult,0
+2,"Abelson, Samuel (Hannah Wizosky)",female,28.0,24.0,U,C,Mrs,High,2,0,YoungAdult,1
+3,"Najib, Adele Kiamie ""Jane""",female,15.0,7.225,U,C,Miss,Low,1,1,Teen,1
+3,"Gustafsson, Alfred Ossian",male,20.0,9.8458,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Petroff, Nedelio",male,19.0,7.8958,U,S,Mr,Low,1,1,Teen,0
+3,"Laleff, Kristo",male,32.25215146299484,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+1,"Potter, Thomas Jr (Lily Alexenia Wilson)",female,56.0,83.1583,C,C,Mrs,VeryHigh,2,0,Adult,1
+2,"Shelley, William (Imanita Parrish Hall)",female,25.0,26.0,U,S,Mrs,High,2,0,YoungAdult,1
+3,"Markun, Johann",male,33.0,7.8958,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Dahlberg, Gerda Ulrika",female,22.0,10.5167,U,S,Miss,Medium,1,1,YoungAdult,0
+2,"Banfield, Frederick James",male,28.0,10.5,U,S,Mr,Medium,1,1,YoungAdult,0
+3,"Sutehall, Henry Jr",male,25.0,7.05,U,S,Mr,Low,1,1,YoungAdult,0
+3,"Rice, William (Margaret Norton)",female,39.0,29.125,U,Q,Mrs,High,6,0,Adult,0
+2,"Montvila, Juozas",male,27.0,13.0,U,S,Rare,Medium,1,1,YoungAdult,0
+1,"Graham, Margaret Edith",female,19.0,30.0,B,S,Miss,High,1,1,Teen,1
+3,"Johnston, Catherine Helen ""Carrie""",female,21.8243661971831,23.45,U,S,Miss,High,4,0,YoungAdult,0
+1,"Behr, Karl Howell",male,26.0,30.0,C,C,Mr,High,1,1,YoungAdult,1
+3,"Dooley, Patrick",male,32.0,7.75,U,Q,Mr,Low,1,1,YoungAdult,0
