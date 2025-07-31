@@ -16,6 +16,10 @@ st.write('## Классическое ML-приложение на Titanic')
 url = "https://raw.githubusercontent.com/jahongirka178/TitanicML/refs/heads/master/data/titanic_for_hw.csv"
 df = pd.read_csv(url)
 
+# Таблица
+st.subheader('Почищенные данные')
+st.table(df)
+
 
 # Визуализация
 st.subheader('📊 Визуализация данных')
