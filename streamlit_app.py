@@ -307,5 +307,5 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, r
 X_train_encoded = encoder.fit_transform(X_train, y_train)
 X_test_encoded = encoder.transform(X_test)
 
-result = pd.DataFrame([analyze_model(X_train_encoded, X_test_encoded, y_train, y_test, model, repr(model))])
+result = pd.DataFrame([analyze_model(X_train_encoded, X_test_encoded, y_train, y_test, model, model_choice)])
 st.dataframe(result)
