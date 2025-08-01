@@ -34,7 +34,6 @@ def features_importance(X_train, X_test, y_train, y_test, model):
         importance_df,
         x="Importance",
         y="Feature",
-        orientation="h",
         title="Permutation Importance",
         labels={"Importance": "Decrease in accuracy"},
         height=400
