@@ -7,6 +7,8 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
 import category_encoders as ce
 import plotly.express as px
 
@@ -92,8 +94,9 @@ X_test_encoded = encoder.transform(X_test)
 
 models = {
     'Decision Tree': DecisionTreeClassifier(random_state=42),
-    'KNN': KNeighborsClassifier(9),
-    'Logistic Regression': LogisticRegression(C=0.01, max_iter=1000, penalty='l1', solver='liblinear'),
+    'KNN': make_pipeline(StandardScaler(), KNeighborsClassifier(9)),
+    'Logistic Regression': make_pipeline(StandardScaler(),
+                                         LogisticRegression(C=0.01, max_iter=1000, penalty='l1', solver='liblinear')),
     'Random Forest': RandomForestClassifier(
         n_estimators=100,
         max_depth=8,
