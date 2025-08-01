@@ -208,7 +208,7 @@ for name, model in models.items():
     st.sidebar.dataframe(proba_df.set_index("Класс"), use_container_width=True)
 
 # ROC-AUC с выбором классификатора
-model_choice = st.sidebar.selectbox(
+model_choice = st.selectbox(
     list(models.keys()),
     index=0
 )
