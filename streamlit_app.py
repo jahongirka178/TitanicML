@@ -135,7 +135,7 @@ st.dataframe(df.round(2), use_container_width=True)
 
 # Визуализация
 st.write('## Визуализация')
-# Первая строка визуализаций
+
 col1, col2 = st.columns(2)
 
 with col1:
@@ -148,7 +148,6 @@ with col2:
                         title='Распределение классов по выжившим')
     st.plotly_chart(fig2, use_container_width=True)
 
-# Вторая строка визуализаций — здесь мы создаём col3 и col4
 col3, col4 = st.columns(2)
 
 with col3:
@@ -309,3 +308,7 @@ X_test_encoded = encoder.transform(X_test)
 
 result = pd.DataFrame([analyze_model(X_train_encoded, X_test_encoded, y_train, y_test, model, model_choice)])
 st.dataframe(result)
+
+
+st.write("## Stacking")
+
