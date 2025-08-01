@@ -16,14 +16,6 @@ import plotly.express as px
 
 pd.set_option("display.float_format", "{:.2f}".format)
 
-import plotly.express as px
-import pandas as pd
-from sklearn.inspection import permutation_importance
-
-import plotly.express as px
-import pandas as pd
-from sklearn.inspection import permutation_importance
-
 
 def features_importance(X_train, X_test, y_train, y_test, model):
     model.fit(X_train, y_train)
@@ -56,7 +48,7 @@ def features_importance(X_train, X_test, y_train, y_test, model):
         height=400
     )
     fig.update_layout(xaxis_tickangle=-45)
-    return fig
+    st.plotly_chart(fig, use_container_width=True)
 
 
 def get_metrics(y, y_pred, y_proba):
