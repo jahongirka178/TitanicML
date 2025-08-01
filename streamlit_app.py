@@ -201,14 +201,16 @@ user_encoded = user_encoded[X_train_encoded.columns]
 st.sidebar.subheader("📈 Результаты предсказания")
 
 for name, model in models.items():
-    pred = model.predict(user_encoded)[0]
-    proba = model.predict_proba(user_encoded)[0]
-    st.sidebar.markdown(f"**{name}: {'Выжил' if pred == 1 else 'Не выжил'}**")
-    proba_df = pd.DataFrame({'Класс': ['Не выжил', 'Выжил'], 'Вероятность': proba})
+    y_pred = model.predict(user_encoded)[0]
+    y_proba = model.predict_proba(user_encoded)[0]
+    st.sidebar.markdown(f"**{name}: {'Выжил' if y_pred == 1 else 'Не выжил'}**")
+    proba_df = pd.DataFrame({'Класс': ['Не выжил', 'Выжил'], 'Вероятность': y_proba})
     st.sidebar.dataframe(proba_df.set_index("Класс"), use_container_width=True)
 
 # ROC-AUC с выбором классификатора
+st.write("## Выбор модели для предсказания")
 model_choice = st.selectbox(
+    "Выберите модель:",
     list(models.keys()),
     index=0
 )
