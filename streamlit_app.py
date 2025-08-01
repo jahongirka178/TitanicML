@@ -320,6 +320,7 @@ encoder = EncoderClass(cols=['Sex', 'Embarked', 'Title', 'FareCategory', 'AgeGro
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42, stratify=y)
 
+'''
 # 1. выбор трёх базовых моделей
 stacking_models = st.multiselect(
     "Выберите ровно 3 модели для стекинга (базовые модели):",
@@ -336,8 +337,14 @@ final_model_name = st.selectbox(
     help="Эта модель обучается на предсказаниях базовых моделей"
 )
 
+'''
+
+stacking_models = ['Decision Tree', 'Random Forest', 'Logistic Regression']
+final_model_name = 'KNN'
+
 # 3. кнопка запуска
 launch_stacking = st.button("🚀 Запустить Stacking")
+
 
 # 4. логика запуска
 if launch_stacking:
