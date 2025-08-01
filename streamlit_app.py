@@ -208,11 +208,21 @@ for name, model in models.items():
     st.sidebar.dataframe(proba_df.set_index("Класс"), use_container_width=True)
 
 # ROC-AUC с выбором классификатора
-st.write("## Выбор модели для предсказания")
+st.write("## Анализ моделей")
 model_choice = st.selectbox(
     "Выберите модель:",
     list(models.keys()),
     index=0
 )
+
+test_size = st.slider(
+    "Доля тестовой выборки",
+    min_value=0.1,
+    max_value=0.5,
+    value=0.3,
+    step=0.05,
+    help="Слишком малый или слишком большой размер может повлиять на стабильность стратификации."
+)
 selected_model = models[model_choice]
 st.write(f'Выбор {repr(selected_model)}')
+st.write(f'test_size={test_size}')
