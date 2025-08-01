@@ -140,7 +140,7 @@ user_input = pd.DataFrame([{
     'Pclass': pclass,
     'Sex': sex_input,
     'Age': age,
-    'Fare': fare,
+    'Fare': round(fare, 2),
     'Embarked': embarked_input,
     'Title': title_input,
     'FareCategory': get_fare_category(fare),
