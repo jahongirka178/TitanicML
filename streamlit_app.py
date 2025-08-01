@@ -40,7 +40,7 @@ def features_importance(X_train, X_test, y_train, y_test, model):
         height=400
     )
     fig.update_layout(yaxis=dict(tickmode="linear"))
-    fig.show()
+    st.plotly_chart(fig, use_container_width=True)
 
 
 def get_metrics(y, y_pred, y_proba):
