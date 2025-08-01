@@ -6,7 +6,7 @@ from sklearn.metrics import roc_curve, auc, accuracy_score, f1_score
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, StackingClassifier
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 import category_encoders as ce
@@ -309,6 +309,52 @@ X_test_encoded = encoder.transform(X_test)
 result = pd.DataFrame([analyze_model(X_train_encoded, X_test_encoded, y_train, y_test, model, model_choice)])
 st.dataframe(result)
 
-
 st.write("## Stacking")
 
+encoder_name = st.selectbox("Выберите encoder", list(encoder_options.keys()), index=2)  # по умолчанию TargetEncoder
+EncoderClass = encoder_options[encoder_name]
+
+encoder = EncoderClass(cols=['Sex', 'Embarked', 'Title', 'FareCategory', 'AgeGroup'])
+
+# 1. выбор трёх базовых моделей
+stacking_models = st.multiselect(
+    "Выберите ровно 3 модели для стекинга (базовые модели):",
+    options=list(models.keys()),
+    default=list(models.keys())[:3],  # любые 3 по умолчанию
+    help="Базовые (первого уровня) модели"
+)
+
+# 2. выбор финальной (мета)-модели
+final_model_name = st.selectbox(
+    "Выберите финальную модель (мета-модель):",
+    options=list(models.keys()),
+    index=3,
+    help="Эта модель обучается на предсказаниях базовых моделей"
+)
+
+# 3. кнопка запуска
+launch_stacking = st.button("🚀 Запустить Stacking")
+
+# 4. логика запуска
+if launch_stacking:
+    estimators = [(name, models[name]) for name in stacking_models]
+    final_model = models[final_model_name]
+
+    # создаём и обучаем стекинг-классфикатор
+    stacking_clf = StackingClassifier(
+        estimators=estimators,
+        final_estimator=final_model,
+        passthrough=True,  # добавлять ли исходные признаки во второй уровень
+        cv=5,
+        n_jobs=-1
+    )
+
+    # оцениваем модель так же, как и остальные
+    stacking_result = analyze_model(
+        X_train_encoded, X_test_encoded,
+        y_train, y_test,
+        stacking_clf, "Stacking"
+    )
+
+    st.subheader("📊 Результаты стекинга")
+    st.dataframe(pd.DataFrame([stacking_result]).round(3))
