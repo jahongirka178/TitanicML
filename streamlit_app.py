@@ -99,7 +99,6 @@ with col4:
                         title='Распределение возраста по выжившим', opacity=0.6)
     st.plotly_chart(fig4, use_container_width=True)
 
-
 # Моделирование
 X = df.drop(columns=['Survived', 'Name', 'Cabin'])
 y = df['Survived']
@@ -142,7 +141,6 @@ for name, model in models.items():
         'Test Accuracy': acc_test,
         'Train Accuracy': acc_train
     })
-
 
 st.write('## Сравнение моделей по точности')
 st.table(pd.DataFrame(results).round(2))
@@ -198,7 +196,7 @@ for col in ['Pclass', 'Age', 'Fare', 'family_size', 'is_alone']:
 
 user_encoded = user_encoded[X_train_encoded.columns]
 
-#st.dataframe(user_input, use_container_width=True)
+# st.dataframe(user_input, use_container_width=True)
 
 st.sidebar.subheader("📈 Результаты предсказания")
 
@@ -208,3 +206,11 @@ for name, model in models.items():
     st.sidebar.markdown(f"**{name}: {'Выжил' if pred == 1 else 'Не выжил'}**")
     proba_df = pd.DataFrame({'Класс': ['Не выжил', 'Выжил'], 'Вероятность': proba})
     st.sidebar.dataframe(proba_df.set_index("Класс"), use_container_width=True)
+
+# ROC-AUC с выбором классификатора
+model_choice = st.sidebar.selectbox(
+    list(models.keys()),
+    index=0
+)
+selected_model = models[model_choice]
+st.write(f'Выбор {repr(selected_model)}')
