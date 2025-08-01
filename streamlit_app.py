@@ -73,14 +73,32 @@ st.dataframe(df.round(2), use_container_width=True)
 
 # Визуализация
 st.write('## Визуализация')
+# Первая строка визуализаций
 col1, col2 = st.columns(2)
 
 with col1:
-    fig1 = px.histogram(df, x='Survived', color='Sex', barmode='group', title='Выжившие по полу')
+    fig1 = px.histogram(df, x='Survived', color='Sex', barmode='group',
+                        title='Выжившие по полу')
     st.plotly_chart(fig1, use_container_width=True)
+
 with col2:
-    fig2 = px.box(df, x='Pclass', y='Age', color='Survived', title='Возраст по классам и выживанию')
+    fig2 = px.histogram(df, x='Pclass', color='Survived', barmode='group',
+                        title='Распределение классов по выжившим')
     st.plotly_chart(fig2, use_container_width=True)
+
+# Вторая строка визуализаций — здесь мы создаём col3 и col4
+col3, col4 = st.columns(2)
+
+with col3:
+    fig3 = px.histogram(df, x='Fare', nbins=50, color='Survived',
+                        title='Распределение стоимости билета по выжившим')
+    st.plotly_chart(fig3, use_container_width=True)
+
+with col4:
+    fig4 = px.histogram(df, x='Age', nbins=40, color='Survived',
+                        title='Распределение возраста по выжившим')
+    st.plotly_chart(fig4, use_container_width=True)
+
 
 # Моделирование
 X = df.drop(columns=['Survived', 'Name', 'Cabin'])
