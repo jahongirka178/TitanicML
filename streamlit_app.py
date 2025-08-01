@@ -319,6 +319,8 @@ EncoderClass = encoder_options[encoder_name]
 encoder = EncoderClass(cols=['Sex', 'Embarked', 'Title', 'FareCategory', 'AgeGroup'])
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42, stratify=y)
+X_train_encoded = encoder.fit_transform(X_train, y_train)
+X_test_encoded = encoder.transform(X_test)
 
 '''
 # 1. выбор трёх базовых моделей
@@ -344,7 +346,6 @@ final_model_name = 'KNN'
 
 # 3. кнопка запуска
 launch_stacking = st.button("🚀 Запустить Stacking")
-
 
 # 4. логика запуска
 if launch_stacking:
