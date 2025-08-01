@@ -277,6 +277,8 @@ model_choice = st.selectbox(
     index=0
 )
 
+model = models[model_choice]
+
 test_size = st.slider(
     "Доля тестовой выборки",
     min_value=0.1,
@@ -285,8 +287,6 @@ test_size = st.slider(
     step=0.05,
     help="Слишком малый или слишком большой размер может повлиять на стабильность стратификации."
 )
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=42, stratify=y)
 
 encoder_options = {
     "OneHotEncoder": ce.OneHotEncoder,
@@ -301,6 +301,8 @@ encoder_name = st.selectbox("Выберите encoder", list(encoder_options.key
 EncoderClass = encoder_options[encoder_name]
 
 encoder = EncoderClass(cols=['Sex', 'Embarked', 'Title', 'FareCategory', 'AgeGroup'])
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=42, stratify=y)
 
 X_train_encoded = encoder.fit_transform(X_train, y_train)
 X_test_encoded = encoder.transform(X_test)
