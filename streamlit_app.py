@@ -322,16 +322,12 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random
 X_train_encoded = encoder.fit_transform(X_train, y_train)
 X_test_encoded = encoder.transform(X_test)
 
-'''
-# 1. выбор трёх базовых моделей
 stacking_models = st.multiselect(
-    "Выберите ровно 3 модели для стекинга (базовые модели):",
     options=list(models.keys()),
-    default=list(models.keys())[:3],  # любые 3 по умолчанию
+    default=list(models.keys())[:3],
     help="Базовые (первого уровня) модели"
 )
 
-# 2. выбор финальной (мета)-модели
 final_model_name = st.selectbox(
     "Выберите финальную модель (мета-модель):",
     options=list(models.keys()),
@@ -339,15 +335,11 @@ final_model_name = st.selectbox(
     help="Эта модель обучается на предсказаниях базовых моделей"
 )
 
-'''
+# stacking_models = ['Decision Tree', 'Random Forest', 'Logistic Regression']
+# final_model_name = 'KNN'
 
-stacking_models = ['Decision Tree', 'Random Forest', 'Logistic Regression']
-final_model_name = 'KNN'
-
-# 3. кнопка запуска
 launch_stacking = st.button("🚀 Запустить Stacking")
 
-# 4. логика запуска
 if launch_stacking:
     estimators = [(name, models[name]) for name in stacking_models]
     final_model = models[final_model_name]
