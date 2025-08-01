@@ -140,7 +140,7 @@ user_input = pd.DataFrame([{
     'Pclass': pclass,
     'Sex': sex_input,
     'Age': age,
-    'Fare': round(fare, 2),
+    'Fare': fare,
     'Embarked': embarked_input,
     'Title': title_input,
     'FareCategory': get_fare_category(fare),
@@ -148,6 +148,8 @@ user_input = pd.DataFrame([{
     'is_alone': is_alone,
     'AgeGroup': get_age_group(age)
 }])
+
+df = df.round(2)
 
 user_encoded = encoder.transform(user_input)
 
