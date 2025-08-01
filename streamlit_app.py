@@ -91,12 +91,12 @@ col3, col4 = st.columns(2)
 
 with col3:
     fig3 = px.histogram(df, x='Fare', nbins=50, color='Survived',
-                        title='Распределение стоимости билета по выжившим')
+                        title='Распределение стоимости билета по выжившим', opacity=0.6)
     st.plotly_chart(fig3, use_container_width=True)
 
 with col4:
     fig4 = px.histogram(df, x='Age', nbins=40, color='Survived',
-                        title='Распределение возраста по выжившим')
+                        title='Распределение возраста по выжившим', opacity=0.6)
     st.plotly_chart(fig4, use_container_width=True)
 
 
