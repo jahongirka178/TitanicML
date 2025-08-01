@@ -9,10 +9,38 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, StackingClassifier
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
+from sklearn.inspection import permutation_importance
 import category_encoders as ce
 import plotly.express as px
 
 pd.set_option("display.float_format", "{:.2f}".format)
+
+import plotly.express as px
+import pandas as pd
+from sklearn.inspection import permutation_importance
+
+
+def features_importance(X_train, X_test, y_train, y_test, model):
+    model.fit(X_train, y_train)
+    importance_result = permutation_importance(model, X_test, y_test, n_repeats=30, random_state=42)
+
+    sorted_idx = importance_result.importances_mean.argsort()
+    importance_df = pd.DataFrame({
+        "Feature": X_test.columns[sorted_idx],
+        "Importance": importance_result.importances_mean[sorted_idx]
+    })
+
+    fig = px.bar(
+        importance_df,
+        x="Importance",
+        y="Feature",
+        orientation="h",
+        title="Permutation Importance",
+        labels={"Importance": "Decrease in accuracy"},
+        height=400
+    )
+    fig.update_layout(yaxis=dict(tickmode="linear"))
+    fig.show()
 
 
 def get_metrics(y, y_pred, y_proba):
@@ -305,6 +333,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, r
 
 X_train_encoded = encoder.fit_transform(X_train, y_train)
 X_test_encoded = encoder.transform(X_test)
+
+features_importance(X_train_encoded, X_test_encoded, y_train, y_test, model)
 
 result = pd.DataFrame([analyze_model(X_train_encoded, X_test_encoded, y_train, y_test, model, model_choice)])
 st.subheader("Результаты анализа")
