@@ -323,6 +323,7 @@ X_train_encoded = encoder.fit_transform(X_train, y_train)
 X_test_encoded = encoder.transform(X_test)
 
 stacking_models = st.multiselect(
+    "Выберите 3 базовые модели для стекинга:",
     options=list(models.keys()),
     default=list(models.keys())[:3],
     help="Базовые (первого уровня) модели"
