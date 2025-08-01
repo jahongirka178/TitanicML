@@ -1,10 +1,12 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
+
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 import category_encoders as ce
 import plotly.express as px
 
@@ -90,7 +92,23 @@ X_test_encoded = encoder.transform(X_test)
 
 models = {
     'Decision Tree': DecisionTreeClassifier(random_state=42),
-    'KNN': KNeighborsClassifier(4),
+    'KNN': KNeighborsClassifier(9),
+    'Logistic Regression': LogisticRegression(C=0.01, max_iter=1000, penalty='l1', solver='liblinear'),
+    'Random Forest': RandomForestClassifier(
+        n_estimators=100,
+        max_depth=8,
+        min_samples_split=5,
+        min_samples_leaf=2,
+        max_features='sqrt',
+        criterion='entropy',
+        random_state=42),
+    'Gradient Boosting': GradientBoostingClassifier(
+        n_estimators=100,
+        learning_rate=0.1,
+        max_depth=10,
+        random_state=42
+    )
+
 }
 
 results = []
