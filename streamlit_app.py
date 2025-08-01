@@ -9,8 +9,8 @@ import plotly.express as px
 
 # Настройка страницы
 st.set_page_config(page_title='🚢 Titanic Classifier', layout='wide')
-st.title("Датасет Titanic - Предсказание выживания пассажира")
-st.write('## Классическое ML-приложение на Titanic')
+st.title("🚢 Датасет Titanic - Обучение и предсказание")
+st.header('Работа с датасетом Titanic')
 
 # Загрузка данных
 url = "https://raw.githubusercontent.com/jahongirka178/TitanicML/refs/heads/master/data/titanic_for_hw.csv"
@@ -20,89 +20,90 @@ df = pd.read_csv(url)
 st.subheader('Данные')
 st.dataframe(df.round(2), use_container_width=True)
 
+
 # Визуализация
-st.subheader('📊 Визуализация данных')
+st.write('## Визуализация')
 col1, col2 = st.columns(2)
 
 with col1:
-    fig1 = px.histogram(df, x='Survived', color='Sex', barmode='group',
-                        title='Выживание по полу', labels={'Survived': 'Выжил'})
+    fig1 = px.histogram(df, x='Survived', color='Sex', barmode='group', title='Выжившие по полу')
     st.plotly_chart(fig1, use_container_width=True)
-
 with col2:
-    fig2 = px.scatter(df, x='Age', y='Fare', color=df['Survived'].map({0: 'Не выжил', 1: 'Выжил'}),
-                      title='Возраст vs Тариф', labels={'Fare': 'Стоимость билета', 'Age': 'Возраст'})
+    fig2 = px.box(df, x='Pclass', y='Age', color='Survived', title='Возраст по классам и выживанию')
     st.plotly_chart(fig2, use_container_width=True)
 
-# Разделение признаков и цели
-X = df.drop(columns='Survived')
+
+
+# Моделирование
+X = df[['Pclass', 'Sex', 'Age', 'Fare', 'Embarked', 'Title', 'FareCategory', 'family_size', 'is_alone', 'AgeGroup']]
 y = df['Survived']
 
-# Кодирование категориальных переменных
-encoder = ce.TargetEncoder(cols=['Sex', 'Embarked'])
-X_encoded = encoder.fit_transform(X, y)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-# Разделение на train/test
-X_train, X_test, y_train, y_test = train_test_split(X_encoded, y, test_size=0.3, random_state=42)
+encoder = ce.TargetEncoder(cols=['Sex', 'Embarked', 'Title', 'FareCategory', 'AgeGroup'])
+X_train_encoded = encoder.fit_transform(X_train, y_train)
+X_test_encoded = encoder.transform(X_test)
 
-# Модели
 models = {
     'Decision Tree': DecisionTreeClassifier(random_state=42),
-    'KNN': KNeighborsClassifier(n_neighbors=5)
+    'KNN': KNeighborsClassifier(4),
 }
 
 results = []
 for name, model in models.items():
-    model.fit(X_train, y_train)
-    acc_train = accuracy_score(y_train, model.predict(X_train))
-    acc_test = accuracy_score(y_test, model.predict(X_test))
+    model.fit(X_train_encoded, y_train)
+    acc_train = accuracy_score(y_train, model.predict(X_train_encoded))
+    acc_test = accuracy_score(y_test, model.predict(X_test_encoded))
     results.append({
         'Model': name,
         'Train Accuracy': round(acc_train, 2),
         'Test Accuracy': round(acc_test, 2)
     })
 
-st.subheader('📈 Сравнение моделей')
+st.write('## Сравнение моделей по точности')
 st.table(pd.DataFrame(results))
 
-# Форма ввода данных
-st.sidebar.header('🔍 Предсказание по параметрам')
-pclass = st.sidebar.selectbox('Класс билета (Pclass)', sorted(df['Pclass'].unique()))
-sex = st.sidebar.selectbox('Пол (Sex)', df['Sex'].unique())
-age = st.sidebar.slider('Возраст (Age)', 0, 80, 30)
-sibsp = st.sidebar.number_input('Количество братьев/сестёр или супругов (SibSp)', 0, 10, 0)
-parch = st.sidebar.number_input('Количество родителей/детей (Parch)', 0, 10, 0)
-fare = st.sidebar.slider('Стоимость билета (Fare)', 0.0, 600.0, 50.0)
-embarked = st.sidebar.selectbox('Порт посадки (Embarked)', df['Embarked'].unique())
+# Sidebar для ввода пользователя
+st.sidebar.header('Предсказание по параметрам')
 
-# Подготовка входных данных
+sex_input = st.sidebar.selectbox('Пол', df['Sex'].unique())
+embarked_input = st.sidebar.selectbox('Порт посадки', df['Embarked'].unique())
+title_input = st.sidebar.selectbox('Звание', df['Title'].unique())
+fare_cat_input = st.sidebar.selectbox('Категория тарифа', df['FareCategory'].unique())
+age_group_input = st.sidebar.selectbox('Возрастная группа', df['AgeGroup'].unique())
+
+pclass = st.sidebar.selectbox('Класс билета', sorted(df['Pclass'].unique()))
+age = st.sidebar.slider('Возраст', float(df['Age'].min()), float(df['Age'].max()), float(df['Age'].mean()))
+fare = st.sidebar.slider('Стоимость билета', float(df['Fare'].min()), float(df['Fare'].max()), float(df['Fare'].mean()))
+family_size = st.sidebar.slider('Размер семьи', 0, int(df['family_size'].max()), 1)
+is_alone = int(family_size == 0)
+
 user_input = pd.DataFrame([{
     'Pclass': pclass,
-    'Sex': sex,
+    'Sex': sex_input,
     'Age': age,
-    'SibSp': sibsp,
-    'Parch': parch,
     'Fare': fare,
-    'Embarked': embarked
+    'Embarked': embarked_input,
+    'Title': title_input,
+    'FareCategory': fare_cat_input,
+    'family_size': family_size,
+    'is_alone': is_alone,
+    'AgeGroup': age_group_input
 }])
 
 user_encoded = encoder.transform(user_input)
 
-st.subheader('Введённые данные')
-st.dataframe(user_input)
+for col in ['Pclass', 'Age', 'Fare', 'family_size', 'is_alone']:
+    user_encoded[col] = user_input[col].values
 
-# Предсказания моделей
-st.sidebar.subheader("📌 Результаты предсказания")
+user_encoded = user_encoded[X_train_encoded.columns]
 
-if st.sidebar.button("Сделать предсказание"):
-    user_encoded = encoder.transform(user_input)
+st.dataframe(user_input, use_container_width=True)
 
-    for name, model in models.items():
-        pred = model.predict(user_encoded)[0]
-        proba = model.predict_proba(user_encoded)[0]
-
-        st.sidebar.markdown(f"**{name}: {'✅ Выжил' if pred == 1 else '❌ Не выжил'}**")
-        proba_df = pd.DataFrame({'Класс': ['Не выжил', 'Выжил'], 'Вероятность': proba})
-        st.sidebar.dataframe(proba_df.set_index("Класс"), use_container_width=True)
-else:
-    st.sidebar.markdown("⬅️ Введите параметры и нажмите кнопку.")
+st.sidebar.subheader("📈 Результаты предсказания")
+for name, model in models.items():
+    pred = model.predict(user_encoded)[0]
+    proba = model.predict_proba(user_encoded)[0]
+    st.sidebar.markdown(f"**{name}: {'Выжил' if pred == 1 else 'Не выжил'}**")
+    proba_df = pd.DataFrame({'Класс': ['Не выжил', 'Выжил'], 'Вероятность': proba})
+    st.sidebar.dataframe(proba_df.set_index("Класс"), use_container_width=True)
