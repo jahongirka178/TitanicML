@@ -3,3 +3,4 @@ pandas
 scikit-learn
 category_encoders
 plotly
+numpy

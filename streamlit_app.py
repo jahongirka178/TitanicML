@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.tree import DecisionTreeClassifier
@@ -20,7 +21,6 @@ df = pd.read_csv(url)
 st.subheader('Данные')
 st.dataframe(df.round(2), use_container_width=True)
 
-
 # Визуализация
 st.write('## Визуализация')
 col1, col2 = st.columns(2)
@@ -32,9 +32,13 @@ with col2:
     fig2 = px.box(df, x='Pclass', y='Age', color='Survived', title='Возраст по классам и выживанию')
     st.plotly_chart(fig2, use_container_width=True)
 
-
-
 # Моделирование
+quantiles = [0, 0.3, 0.5, 0.85, 1.0]
+labels = ['Low', 'Medium', 'High', 'VeryHigh']
+
+fare_cat = pd.qcut(df['Fare'], q=quantiles, labels=labels)
+choices = ['Child', 'Teen', 'YoungAdult', 'Adult', 'Senior']
+
 X = df.drop(columns=['Survived', 'Name', 'Cabin'])
 y = df['Survived']
 
@@ -69,12 +73,24 @@ st.sidebar.header('Предсказание по параметрам')
 sex_input = st.sidebar.selectbox('Пол', df['Sex'].unique())
 embarked_input = st.sidebar.selectbox('Порт посадки', df['Embarked'].unique())
 title_input = st.sidebar.selectbox('Обращение', df['Title'].unique())
-fare_cat_input = st.sidebar.selectbox('Категория тарифа', df['FareCategory'].unique())
-age_group_input = st.sidebar.selectbox('Возрастная группа', df['AgeGroup'].unique())
-
 pclass = st.sidebar.selectbox('Класс билета', sorted(df['Pclass'].unique()))
-age = st.sidebar.slider('Возраст', float(df['Age'].min()), float(df['Age'].max()), float((df['Age'].min()+df['Age'].max())/2))
-fare = st.sidebar.slider('Стоимость билета', float(df['Fare'].min()), float(df['Fare'].max()), float((df['Fare'].min()+df['Fare'].max())/2))
+age = st.sidebar.slider('Возраст', float(df['Age'].min()), float(df['Age'].max()),
+                        float((df['Age'].min() + df['Age'].max()) / 2))
+conditions = [
+    (age <= 12),
+    (age <= 19),
+    (age <= 35),
+    (age <= 59),
+    (age > 59)
+]
+age_group_input = np.select(conditions, choices, default='Unknown')
+
+fare = st.sidebar.slider('Стоимость билета', float(df['Fare'].min()), float(df['Fare'].max()),
+                         float((df['Fare'].min() + df['Fare'].max()) / 2))
+# Создаем классификатор вручную на основе тех же квантилей:
+fare_bins = df['Fare'].quantile(quantiles).values
+fare_cat_input = pd.cut([fare], bins=fare_bins, labels=labels, include_lowest=True)[0]
+
 family_size = st.sidebar.slider('Размер семьи', 0, int(df['family_size'].max()), 1)
 is_alone = int(family_size == 0)
 
