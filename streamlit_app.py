@@ -68,13 +68,13 @@ st.sidebar.header('Предсказание по параметрам')
 
 sex_input = st.sidebar.selectbox('Пол', df['Sex'].unique())
 embarked_input = st.sidebar.selectbox('Порт посадки', df['Embarked'].unique())
-title_input = st.sidebar.selectbox('Звание', df['Title'].unique())
+title_input = st.sidebar.selectbox('Обращение', df['Title'].unique())
 fare_cat_input = st.sidebar.selectbox('Категория тарифа', df['FareCategory'].unique())
 age_group_input = st.sidebar.selectbox('Возрастная группа', df['AgeGroup'].unique())
 
 pclass = st.sidebar.selectbox('Класс билета', sorted(df['Pclass'].unique()))
-age = st.sidebar.slider('Возраст', float(df['Age'].min()), float(df['Age'].max()), float(df['Age'].mean()))
-fare = st.sidebar.slider('Стоимость билета', float(df['Fare'].min()), float(df['Fare'].max()), float(df['Fare'].mean()))
+age = st.sidebar.slider('Возраст', float(df['Age'].min()), float(df['Age'].max()), float(df['Age'].median()))
+fare = st.sidebar.slider('Стоимость билета', float(df['Fare'].min()), float(df['Fare'].max()), float(df['Fare'].median()))
 family_size = st.sidebar.slider('Размер семьи', 0, int(df['family_size'].max()), 1)
 is_alone = int(family_size == 0)
 
