@@ -344,7 +344,6 @@ if launch_stacking:
     estimators = [(name, models[name]) for name in stacking_models]
     final_model = models[final_model_name]
 
-    # создаём и обучаем стекинг-классфикатор
     stacking_clf = StackingClassifier(
         estimators=estimators,
         final_estimator=final_model,
@@ -353,7 +352,6 @@ if launch_stacking:
         n_jobs=-1
     )
 
-    # оцениваем модель так же, как и остальные
     stacking_result = analyze_model(
         X_train_encoded, X_test_encoded,
         y_train, y_test,
