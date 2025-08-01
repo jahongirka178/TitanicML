@@ -121,12 +121,13 @@ for name, model in models.items():
     acc_test = accuracy_score(y_test, model.predict(X_test_encoded))
     results.append({
         'Model': name,
-        'Train Accuracy': round(acc_train, 2),
-        'Test Accuracy': round(acc_test, 2)
+        'Test Accuracy': acc_test,
+        'Train Accuracy': acc_train
     })
 
+
 st.write('## Сравнение моделей по точности')
-st.table(pd.DataFrame(results))
+st.table(pd.DataFrame(results).round(2))
 
 # Sidebar для ввода пользователя
 st.sidebar.header('Предсказание по параметрам')
@@ -182,6 +183,7 @@ user_encoded = user_encoded[X_train_encoded.columns]
 st.dataframe(user_input, use_container_width=True)
 
 st.sidebar.subheader("📈 Результаты предсказания")
+
 for name, model in models.items():
     pred = model.predict(user_encoded)[0]
     proba = model.predict_proba(user_encoded)[0]
