@@ -311,10 +311,13 @@ st.dataframe(result)
 
 st.write("## Stacking")
 
-encoder_name = st.selectbox("Выберите encoder для Stacking", list(encoder_options.keys()), index=2)  # по умолчанию TargetEncoder
+encoder_name = st.selectbox("Выберите encoder для Stacking", list(encoder_options.keys()),
+                            index=2)  # по умолчанию TargetEncoder
 EncoderClass = encoder_options[encoder_name]
 
 encoder = EncoderClass(cols=['Sex', 'Embarked', 'Title', 'FareCategory', 'AgeGroup'])
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42, stratify=y)
 
 # 1. выбор трёх базовых моделей
 stacking_models = st.multiselect(
