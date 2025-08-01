@@ -23,11 +23,12 @@ from sklearn.inspection import permutation_importance
 def features_importance(X_train, X_test, y_train, y_test, model):
     model.fit(X_train, y_train)
     importance_result = permutation_importance(model, X_test, y_test, n_repeats=30, random_state=42)
+    importance_result = importance_result / importance_result.sum() * 100
 
     sorted_idx = importance_result.importances_mean.argsort()
     importance_df = pd.DataFrame({
         "Feature": X_test.columns[sorted_idx],
-        "Importance": importance_result.importances_mean[sorted_idx]
+        "Importance, %": importance_result.importances_mean[sorted_idx]
     })
 
     fig = px.bar(
