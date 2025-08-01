@@ -8,6 +8,50 @@ from sklearn.neighbors import KNeighborsClassifier
 import category_encoders as ce
 import plotly.express as px
 
+
+def get_fare_category(fare: float) -> str:
+    """
+    Возвращает категорию тарифа по значению fare,
+    используя те же квантильные границы, что и pd.qcut.
+
+    Parameters:
+        fare (float): Значение тарифа
+
+    Returns:
+        str: Одна из категорий ['Low', 'Medium', 'High', 'VeryHigh']
+    """
+    quantiles = [0, 0.3, 0.5, 0.85, 1.0]
+    labels = ['Low', 'Medium', 'High', 'VeryHigh']
+    bins = df['Fare'].quantile(quantiles).values
+
+    # Обрабатываем вручную через pd.cut (одиночный элемент)
+    category = pd.cut([fare], bins=bins, labels=labels, include_lowest=True)[0]
+
+    return str(category)
+
+
+def get_age_group(age: float) -> str:
+    """
+    Возвращает возрастную категорию на основе значения возраста.
+
+    Parameters:
+        age (float): Возраст
+
+    Returns:
+        str: Одна из категорий ['Child', 'Teen', 'YoungAdult', 'Adult', 'Senior']
+    """
+    if age <= 12:
+        return 'Child'
+    elif age <= 19:
+        return 'Teen'
+    elif age <= 35:
+        return 'YoungAdult'
+    elif age <= 59:
+        return 'Adult'
+    else:
+        return 'Senior'
+
+
 # Настройка страницы
 st.set_page_config(page_title='🚢 Titanic Classifier', layout='wide')
 st.title("🚢 Датасет Titanic - Обучение и предсказание")
@@ -33,12 +77,6 @@ with col2:
     st.plotly_chart(fig2, use_container_width=True)
 
 # Моделирование
-quantiles = [0, 0.3, 0.5, 0.85, 1.0]
-labels = ['Low', 'Medium', 'High', 'VeryHigh']
-
-fare_cat = pd.qcut(df['Fare'], q=quantiles, labels=labels)
-choices = ['Child', 'Teen', 'YoungAdult', 'Adult', 'Senior']
-
 X = df.drop(columns=['Survived', 'Name', 'Cabin'])
 y = df['Survived']
 
@@ -74,24 +112,26 @@ sex_input = st.sidebar.selectbox('Пол', df['Sex'].unique())
 embarked_input = st.sidebar.selectbox('Порт посадки', df['Embarked'].unique())
 title_input = st.sidebar.selectbox('Обращение', df['Title'].unique())
 pclass = st.sidebar.selectbox('Класс билета', sorted(df['Pclass'].unique()))
-age = st.sidebar.slider('Возраст', float(df['Age'].min()), float(df['Age'].max()),
-                        float((df['Age'].min() + df['Age'].max()) / 2))
-conditions = [
-    (age <= 12),
-    (age <= 19),
-    (age <= 35),
-    (age <= 59),
-    (age > 59)
-]
-age_group_input = np.select(conditions, choices, default='Unknown')
 
-fare = st.sidebar.slider('Стоимость билета', float(df['Fare'].min()), float(df['Fare'].max()),
-                         float((df['Fare'].min() + df['Fare'].max()) / 2))
-# Создаем классификатор вручную на основе тех же квантилей:
-fare_bins = df['Fare'].quantile(quantiles).values
-fare_cat_input = pd.cut([fare], bins=fare_bins, labels=labels, include_lowest=True)[0]
+age = st.sidebar.slider('Возраст',
+                        float(df['Age'].min()),
+                        float(df['Age'].max()),
+                        float((df['Age'].min() + df['Age'].max()) / 2)
+                        )
 
-family_size = st.sidebar.slider('Размер семьи', 0, int(df['family_size'].max()), 1)
+fare = st.sidebar.slider(
+    'Стоимость билета',
+    float(df['Fare'].min()),
+    float(df['Fare'].max()),
+    float((df['Fare'].min() + df['Fare'].max()) / 2)
+)
+
+family_size = st.sidebar.slider(
+    'Размер семьи',
+    0,
+    int(df['family_size'].max()),
+    int(df['family_size'].max() / 2)
+)
 is_alone = int(family_size == 0)
 
 user_input = pd.DataFrame([{
@@ -101,10 +141,10 @@ user_input = pd.DataFrame([{
     'Fare': fare,
     'Embarked': embarked_input,
     'Title': title_input,
-    'FareCategory': fare_cat_input,
+    'FareCategory': get_fare_category(fare),
     'family_size': family_size,
     'is_alone': is_alone,
-    'AgeGroup': age_group_input
+    'AgeGroup': get_age_group(age)
 }])
 
 user_encoded = encoder.transform(user_input)
@@ -123,3 +163,6 @@ for name, model in models.items():
     st.sidebar.markdown(f"**{name}: {'Выжил' if pred == 1 else 'Не выжил'}**")
     proba_df = pd.DataFrame({'Класс': ['Не выжил', 'Выжил'], 'Вероятность': proba})
     st.sidebar.dataframe(proba_df.set_index("Класс"), use_container_width=True)
+
+
+
