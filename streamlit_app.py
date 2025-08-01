@@ -8,6 +8,8 @@ from sklearn.neighbors import KNeighborsClassifier
 import category_encoders as ce
 import plotly.express as px
 
+pd.set_option("display.float_format", "{:.2f}".format)
+
 
 def get_fare_category(fare: float) -> str:
     """
@@ -163,6 +165,3 @@ for name, model in models.items():
     st.sidebar.markdown(f"**{name}: {'Выжил' if pred == 1 else 'Не выжил'}**")
     proba_df = pd.DataFrame({'Класс': ['Не выжил', 'Выжил'], 'Вероятность': proba})
     st.sidebar.dataframe(proba_df.set_index("Класс"), use_container_width=True)
-
-
-
