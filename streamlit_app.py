@@ -307,6 +307,7 @@ X_train_encoded = encoder.fit_transform(X_train, y_train)
 X_test_encoded = encoder.transform(X_test)
 
 result = pd.DataFrame([analyze_model(X_train_encoded, X_test_encoded, y_train, y_test, model, model_choice)])
+st.subheader("Результаты анализа")
 st.dataframe(result)
 
 st.write("## Stacking")
@@ -359,5 +360,5 @@ if launch_stacking:
         stacking_clf, "Stacking"
     )
 
-    st.subheader("📊 Результаты стекинга")
+    st.subheader("Результаты стекинга")
     st.dataframe(pd.DataFrame([stacking_result]).round(3))
