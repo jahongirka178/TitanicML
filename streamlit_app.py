@@ -35,10 +35,10 @@ with col2:
 
 
 # Моделирование
-X = df.drop(columns='Survived')
+X = df[['Pclass', 'Sex', 'Age', 'Fare', 'Embarked', 'Title', 'FareCategory', 'family_size', 'is_alone', 'AgeGroup']]
 y = df['Survived']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 encoder = ce.TargetEncoder(cols=['Sex', 'Embarked', 'Title', 'FareCategory', 'AgeGroup'])
 X_train_encoded = encoder.fit_transform(X_train, y_train)
@@ -50,7 +50,6 @@ models = {
 }
 
 results = []
-
 for name, model in models.items():
     model.fit(X_train_encoded, y_train)
     acc_train = accuracy_score(y_train, model.predict(X_train_encoded))
@@ -63,8 +62,6 @@ for name, model in models.items():
 
 st.write('## Сравнение моделей по точности')
 st.table(pd.DataFrame(results))
-
-
 
 # Sidebar для ввода пользователя
 st.sidebar.header('Предсказание по параметрам')
@@ -88,8 +85,8 @@ user_input = pd.DataFrame([{
     'Fare': fare,
     'Embarked': embarked_input,
     'Title': title_input,
-    'family_size': family_size,
     'FareCategory': fare_cat_input,
+    'family_size': family_size,
     'is_alone': is_alone,
     'AgeGroup': age_group_input
 }])
