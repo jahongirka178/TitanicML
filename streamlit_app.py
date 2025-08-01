@@ -226,3 +226,5 @@ test_size = st.slider(
 selected_model = models[model_choice]
 st.write(f'Выбор {repr(selected_model)}')
 st.write(f'test_size={test_size}')
+
+st.dataframe(df)
