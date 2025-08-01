@@ -130,11 +130,11 @@ url = "https://raw.githubusercontent.com/jahongirka178/TitanicML/refs/heads/mast
 df = pd.read_csv(url)
 
 # Таблица
-st.subheader('Данные')
+st.write('## 1. Данные')
 st.dataframe(df.round(2), use_container_width=True)
 
 # Визуализация
-st.write('## Визуализация')
+st.write('## 2. Визуализация')
 
 col1, col2 = st.columns(2)
 
@@ -203,11 +203,11 @@ for name, model in models.items():
         'Train Accuracy': acc_train
     })
 
-st.write('## Сравнение моделей по точности')
+st.write('## 3. Сравнение моделей по точности')
 st.table(pd.DataFrame(results).round(2))
 
 # Sidebar для ввода пользователя
-st.sidebar.header('Предсказание по параметрам')
+st.sidebar.header('0. Предсказание по параметрам')
 
 sex_input = st.sidebar.selectbox('Пол', df['Sex'].unique())
 embarked_input = st.sidebar.selectbox('Порт посадки', df['Embarked'].unique())
@@ -269,7 +269,7 @@ for name, model in models.items():
     st.sidebar.dataframe(proba_df.set_index("Класс"), use_container_width=True)
 
 # ROC-AUC с выбором классификатора
-st.write("## Анализ моделей")
+st.write("## 4. Анализ моделей")
 model_choice = st.selectbox(
     "Выберите модель:",
     list(models.keys()),
@@ -310,7 +310,7 @@ result = pd.DataFrame([analyze_model(X_train_encoded, X_test_encoded, y_train, y
 st.subheader("Результаты анализа")
 st.dataframe(result)
 
-st.write("## Stacking")
+st.write("## 5. Stacking")
 
 encoder_name = st.selectbox("Выберите encoder для Stacking", list(encoder_options.keys()),
                             index=2)  # по умолчанию TargetEncoder
