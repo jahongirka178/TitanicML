@@ -311,7 +311,7 @@ st.dataframe(result)
 
 st.write("## Stacking")
 
-encoder_name = st.selectbox("Выберите encoder", list(encoder_options.keys()), index=2)  # по умолчанию TargetEncoder
+encoder_name = st.selectbox("Выберите encoder для Stacking", list(encoder_options.keys()), index=2)  # по умолчанию TargetEncoder
 EncoderClass = encoder_options[encoder_name]
 
 encoder = EncoderClass(cols=['Sex', 'Embarked', 'Title', 'FareCategory', 'AgeGroup'])
