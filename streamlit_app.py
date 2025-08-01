@@ -35,7 +35,7 @@ with col2:
 
 
 # Моделирование
-X = df[['Pclass', 'Sex', 'Age', 'Fare', 'Embarked', 'Title', 'FareCategory', 'family_size', 'is_alone', 'AgeGroup']]
+X = df.drop(columns=['Survived', 'Name'])
 y = df['Survived']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
