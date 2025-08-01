@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import roc_curve, auc, accuracy_score, f1_score
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LogisticRegression
@@ -13,6 +13,68 @@ import category_encoders as ce
 import plotly.express as px
 
 pd.set_option("display.float_format", "{:.2f}".format)
+
+
+def get_metrics(y, y_pred, y_proba):
+    fpr, tpr, thresholds = roc_curve(y, y_proba)
+    return auc(fpr, tpr), accuracy_score(y, y_pred), f1_score(y, y_pred)
+
+
+def show_roc(y, y_pred, y_proba, title):
+    fpr, tpr, _ = roc_curve(y, y_proba)
+    auc_score = auc(fpr, tpr)
+    accuracy = accuracy_score(y, y_pred)
+    f1 = f1_score(y, y_pred)
+
+    df_roc = pd.DataFrame({
+        "False Positive Rate": fpr,
+        "True Positive Rate": tpr
+    })
+
+    fig = px.line(
+        df_roc,
+        x="False Positive Rate",
+        y="True Positive Rate",
+        title=f"{title}. AUC={auc_score:.4f}. Accuracy={accuracy * 100:.2f}%. F1={f1:.4f}.",
+        markers=True
+    )
+    # Добавляем диагональ случайного классификатора
+    fig.add_shape(
+        type="line",
+        x0=0, y0=0, x1=1, y1=1,
+        line=dict(dash="dash", color="grey")
+    )
+    fig.update_layout(
+        xaxis_title="False Positive Rate",
+        yaxis_title="True Positive Rate",
+        template="plotly_white"
+    )
+    fig.show()
+
+
+def analyze_model(X_train, X_test, y_train, y_test, model, model_name):
+    model.fit(X_train, y_train)
+
+    y_pred_test = model.predict(X_test)
+    y_proba_test = model.predict_proba(X_test)[:, 1]
+
+    y_pred_train = model.predict(X_train)
+    y_proba_train = model.predict_proba(X_train)[:, 1]
+
+    auc_score_test, accuracy_test, f1_test = get_metrics(y_test, y_pred_test, y_proba_test)
+    auc_score_train, accuracy_train, f1_train = get_metrics(y_train, y_pred_train, y_proba_train)
+
+    show_roc(y_test, y_pred_test, y_proba_test, f'{model_name}')
+
+    return {
+        'model': model_name,
+        'auc_test': auc_score_test,
+        'auc_train': auc_score_train,
+        'accuracy_test': accuracy_test,
+        'accuracy_train': accuracy_train,
+        'f1_test': f1_test,
+        'f1_train': f1_train,
+    }
 
 
 def get_fare_category(fare: float) -> str:
@@ -226,7 +288,6 @@ test_size = st.slider(
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=42, stratify=y)
 
-
 encoder_options = {
     "OneHotEncoder": ce.OneHotEncoder,
     "OrdinalEncoder": ce.OrdinalEncoder,
@@ -241,7 +302,7 @@ EncoderClass = encoder_options[encoder_name]
 
 encoder = EncoderClass(cols=['Sex', 'Embarked', 'Title', 'FareCategory', 'AgeGroup'])
 
-
 X_train_encoded = encoder.fit_transform(X_train, y_train)
 X_test_encoded = encoder.transform(X_test)
 
+analyze_model(X_train_encoded, X_test_encoded, y_train, y_test, model, repr(model))
