@@ -23,7 +23,7 @@ from sklearn.inspection import permutation_importance
 def features_importance(X_train, X_test, y_train, y_test, model):
     model.fit(X_train, y_train)
     importance_result = permutation_importance(model, X_test, y_test, n_repeats=30, random_state=42)
-    importance_result = importance_result / importance_result.sum() * 100
+    importance_result = importance_result / sum(importance_result) * 100
 
     sorted_idx = importance_result.importances_mean.argsort()
     importance_df = pd.DataFrame({
