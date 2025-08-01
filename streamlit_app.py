@@ -49,7 +49,7 @@ def show_roc(y, y_pred, y_proba, title):
         yaxis_title="True Positive Rate",
         template="plotly_white"
     )
-    fig.show()
+    st.plotly_chart(fig, use_container_width=True)
 
 
 def analyze_model(X_train, X_test, y_train, y_test, model, model_name):
