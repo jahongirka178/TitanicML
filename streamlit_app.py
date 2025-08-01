@@ -37,9 +37,6 @@ def features_importance(X_train, X_test, y_train, y_test, model):
 
     importance_df = importance_df.replace([np.inf, -np.inf], np.nan).dropna()
 
-    st.write("🎯 Feature Importance DataFrame")
-    st.dataframe(importance_df)
-
     fig = px.bar(
         importance_df,
         x="Feature",
@@ -337,17 +334,18 @@ EncoderClass = encoder_options[encoder_name]
 
 encoder = EncoderClass(cols=['Sex', 'Embarked', 'Title', 'FareCategory', 'AgeGroup'])
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=42, stratify=y)
+launch_stacking = st.button("Запустить анализ модели")
 
-X_train_encoded = encoder.fit_transform(X_train, y_train)
-X_test_encoded = encoder.transform(X_test)
+if launch_stacking:
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=42, stratify=y)
+    X_train_encoded = encoder.fit_transform(X_train, y_train)
+    X_test_encoded = encoder.transform(X_test)
+    st.subheader('Важность признаков')
+    features_importance(X_train_encoded, X_test_encoded, y_train, y_test, model)
 
-st.subheader('Важность признаков')
-features_importance(X_train_encoded, X_test_encoded, y_train, y_test, model)
-
-result = pd.DataFrame([analyze_model(X_train_encoded, X_test_encoded, y_train, y_test, model, model_choice)])
-st.subheader("Результаты анализа")
-st.dataframe(result)
+    result = pd.DataFrame([analyze_model(X_train_encoded, X_test_encoded, y_train, y_test, model, model_choice)])
+    st.subheader("Метрики модели")
+    st.dataframe(result)
 
 st.write("## 5. Stacking")
 
@@ -378,7 +376,7 @@ final_model_name = st.selectbox(
 # stacking_models = ['Decision Tree', 'Random Forest', 'Logistic Regression']
 # final_model_name = 'KNN'
 
-launch_stacking = st.button("🚀 Запустить Stacking")
+launch_stacking = st.button("Запустить Stacking")
 
 if launch_stacking:
     estimators = [(name, models[name]) for name in stacking_models]
