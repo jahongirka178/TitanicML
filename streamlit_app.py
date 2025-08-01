@@ -73,8 +73,8 @@ fare_cat_input = st.sidebar.selectbox('Категория тарифа', df['Far
 age_group_input = st.sidebar.selectbox('Возрастная группа', df['AgeGroup'].unique())
 
 pclass = st.sidebar.selectbox('Класс билета', sorted(df['Pclass'].unique()))
-age = st.sidebar.slider('Возраст', float(df['Age'].min()), float(df['Age'].max()), float(df['Age'].mode()[0]))
-fare = st.sidebar.slider('Стоимость билета', float(df['Fare'].min()), float(df['Fare'].max()), float(df['Fare'].mode()[0]))
+age = st.sidebar.slider('Возраст', float(df['Age'].min()), float(df['Age'].max()), float((df['Age'].min()+df['Age'].max())/2))
+fare = st.sidebar.slider('Стоимость билета', float(df['Fare'].min()), float(df['Fare'].max()), float((df['Fare'].min()+df['Fare'].max())/2))
 family_size = st.sidebar.slider('Размер семьи', 0, int(df['family_size'].max()), 1)
 is_alone = int(family_size == 0)
 
