@@ -198,7 +198,7 @@ for col in ['Pclass', 'Age', 'Fare', 'family_size', 'is_alone']:
 
 user_encoded = user_encoded[X_train_encoded.columns]
 
-st.dataframe(user_input, use_container_width=True)
+#st.dataframe(user_input, use_container_width=True)
 
 st.sidebar.subheader("📈 Результаты предсказания")
 
