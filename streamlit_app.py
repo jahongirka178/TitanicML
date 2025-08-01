@@ -19,28 +19,43 @@ import plotly.express as px
 import pandas as pd
 from sklearn.inspection import permutation_importance
 
+import plotly.express as px
+import pandas as pd
+from sklearn.inspection import permutation_importance
+
 
 def features_importance(X_train, X_test, y_train, y_test, model):
     model.fit(X_train, y_train)
-    importance_result = permutation_importance(model, X_test, y_test, n_repeats=30, random_state=42)
+    result = permutation_importance(model, X_test, y_test, n_repeats=30, random_state=42)
 
-    sorted_idx = importance_result.importances_mean.argsort()
-    importances = importance_result.importances_mean[sorted_idx]
+    importances = result.importances_mean
+
+    # check for zero importances
+    if importances.sum() == 0:
+        importances = importances + 1e-8
+
+    sorted_idx = importances.argsort()[::-1]
+    features = X_test.columns[sorted_idx]
+
     importance_df = pd.DataFrame({
-        "Feature": X_test.columns[sorted_idx],
-        "Importance, %": importances / sum(importances)
+        "Feature": features,
+        "Importance (%)": (importances[sorted_idx] / importances.sum()) * 100
     })
+
+    importance_df = importance_df.replace([np.inf, -np.inf], np.nan).dropna()
+
+    st.write("🎯 Feature Importance DataFrame")
+    st.dataframe(importance_df)
 
     fig = px.bar(
         importance_df,
-        x="Importance",
-        y="Feature",
-        title="Permutation Importance",
-        labels={"Importance": "Decrease in accuracy"},
+        x="Feature",
+        y="Importance (%)",
+        title="Permutation Importance (normalized)",
         height=400
     )
-    fig.update_layout(yaxis=dict(tickmode="linear"))
-    st.plotly_chart(fig, use_container_width=True)
+    fig.update_layout(xaxis_tickangle=-45)
+    return fig
 
 
 def get_metrics(y, y_pred, y_proba):
