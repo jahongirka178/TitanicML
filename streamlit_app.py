@@ -309,5 +309,3 @@ X_test_encoded = encoder.transform(X_test)
 
 result = pd.DataFrame([analyze_model(X_train_encoded, X_test_encoded, y_train, y_test, model, model_choice)])
 st.dataframe(result)
-
-st.dataframe(X_train_encoded)
